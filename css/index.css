@@ -1,0 +1,1741 @@
+@charset "utf-8";
+@import url('common.css');
+
+/*main1-----------------------------------------------*/
+
+.main1 {
+    width: 100%; height: 95vh;
+    margin-top: 3%;
+    position: relative;
+}
+
+/* .main1 .btn {
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+} */
+
+/* .main1 .btn .left::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.main1 .btn .right::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    display: inline-block;
+    transform: rotate(45deg);
+} */
+
+/* .main1 .circle a {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.main1 .circle a.active {
+    background: black;
+}
+
+.main1 .circle {
+    width: 145px;
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+} */
+
+.main1 .slide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main1 .slide figure {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.main1 .slide figure img {
+    width: 100%; height: 100%;
+}
+.main1 .slide figure section{
+    width: 100%; height: 100%;
+    position: relative;
+}
+
+.main1 p {
+    width: 50%;
+    position: absolute;
+    left: 50%; top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 5rem;
+    color: #383335;
+    z-index: 2;
+}
+/* .main1 .maintxt.active{
+    /* animation: text1 4s forwards infinite; */
+    /* opacity: 0; */
+/* } */
+
+/* @keyframes text1 {
+    0% {
+        top: 52%;
+        opacity: 0;
+    }
+    10% {
+        top: 45%;
+        opacity: 0.3;
+    }
+    30% {
+        top: 52%;
+        opacity: 0.7;
+    }
+    50% {
+        top: 50%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+} */
+
+
+/*main2-----------------------------------------------*/
+
+.main2 {
+    width: 100%;
+    margin-top: 15%;
+}
+
+*.main2 div a {
+    font-size: 6rem;
+    text-align: left;
+    color: #bbb5b1;
+    font-family: Oswald;
+}
+
+
+/*이미지1*/
+
+.main2 .con-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 0 5%;
+}
+
+.main2 .con-1 a {
+    animation: a1 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes a1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main2 .con-1 figure {
+    width: 60%;
+}
+
+.main2 .con-1 figure img {
+    width: 85%;
+    animation: img1 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes img1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*이미지2*/
+
+.main2 .con-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15% 5% 0 5%;
+}
+
+.main2 .con-2 .text1 {
+    text-align: right;
+    padding-right: 100px;
+    animation: a2 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes a2 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main2 .con-2 figure a img {
+    width: 100%;
+    animation: img2 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes img2 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*이미지3*/
+
+.main2 .con-3 {
+    margin: 5% 5% 0 5%;
+}
+
+.main2 .con-3 a {
+    animation: a3 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes a3 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main2 .con-3 figure {
+    width: 55%;
+}
+
+.main2 .con-3 figure a img {
+    width: 100%;
+    animation: img3 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes img3 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*이미지 4*/
+
+.main2 .con-4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5% 5% 0 5%;
+    flex-direction: column;
+}
+
+.main2 .con-4 figure {
+    width: 40%;
+}
+
+.main2 .con-4 a {
+    padding: 0;
+    animation: a4 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes a4 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main2 .con-4 figure a img {
+    width: 100%;
+    animation: img4 0.8s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes img4 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Best-----------------------------------------------*/
+
+.best {
+    margin: 15% 0;
+}
+
+.best .title {
+    font-size: 5rem;
+    color: #7a6c63;
+    margin-left: 5%;
+}
+
+.best .bestitems {
+    width: 100%;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.best .bestitems li {
+    width: 20%;
+    margin: 5% 0 5% 0;
+}
+
+.best .bestitems li:first-child {
+    margin-left: 5%;
+}
+
+.best .bestitems li:last-child {
+    margin-right: 5%;
+}
+
+.best .bestitems li figure {
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.best .bestitems li figure img {
+    width: 100%;
+}
+
+.best .bestitems li p {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.best .morebtn {
+    width: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+/*design --------------------------------------------*/
+
+.design {
+    width: 100%;
+    margin: 10% 0;
+}
+
+.design .designtitle {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 5rem;
+    color: #7a6c63;
+}
+
+.designcon {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.design .designcon .d1 {
+    width: 68%;
+}
+
+.design .designcon .d1 .d1-1 {
+    width: 100%;
+    position: relative;
+}
+
+.design .designcon .d1 .d1-1 p {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-align: center;
+    color: #383335;
+    animation: a1 2.5s forwards;
+    display: none;
+}
+
+@keyframes a1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+        top: 48%;
+    }
+    70% {
+        opacity: 0.7;
+        top: 51%
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.design .designcon .d1 .d1-1 a {
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.design .designcon .d1 .d1-1 a img {
+    width: 100%;
+    height: 100%;
+    animation: a1-1 2s forwards;
+}
+
+@keyframes a1-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg)
+    }
+}
+
+.design .designcon .d1 .d1-1:hover>p {
+    display: block;
+}
+
+.design .designcon .d1 .d1-1:hover>a {
+    display: block;
+}
+
+.design .designcon .d1 .d1-1:hover>img {
+    opacity: 0.5;
+}
+
+.design .designcon .d1 .d1-1 img {
+    width: 100%;
+}
+
+.design .designcon .d1 .d1-2 {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.design .designcon .d1 .d1-2 p {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    color: #383335;
+    animation: a2 2.5s forwards;
+    display: none;
+}
+
+@keyframes a2 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+        top: 48%;
+    }
+    70% {
+        opacity: 0.7;
+        top: 51%
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.design .designcon .d1 .d1-2 a {
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.design .designcon .d1 .d1-2:hover>p {
+    display: block;
+}
+
+.design .designcon .d1 .d1-2:hover>a {
+    display: block;
+}
+
+.design .designcon .d1 .d1-2:hover>img {
+    opacity: 0.5;
+}
+
+.design .designcon .d1 .d1-2 img {
+    width: 100%;
+}
+
+.design .designcon .d1 .d1-2 a img {
+    width: 100%;
+    height: 100%;
+    animation: a2-1 2s forwards;
+}
+
+@keyframes a2-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg)
+    }
+}
+
+.design .d2 {
+    width: 30%;
+}
+
+.design .d2 .d2-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.design .d2 .d2-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.design .designcon .d2 .d2-1 p {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-align: center;
+    color: #383335;
+    animation: a3 2.5s forwards;
+    display: none;
+}
+
+@keyframes a3 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+        top: 48%;
+    }
+    70% {
+        opacity: 0.7;
+        top: 51%
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.design .designcon .d2 .d2-1 a {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.design .designcon .d2 .d2-1:hover>p {
+    display: block;
+}
+
+.design .designcon .d2 .d2-1:hover>a {
+    display: block;
+}
+
+.design .designcon .d2 .d2-1:hover>img {
+    opacity: 0.5;
+}
+
+.design .designcon .d2 .d2-1 a img {
+    width: 100%;
+    animation: a3-1 2s forwards;
+}
+
+@keyframes a3-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg)
+    }
+}
+
+
+/*event----------------------------------------------*/
+
+.class {
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.class p {
+    margin-left: 5%;
+    font-size: 5rem;
+    color: #7a6c63;
+}
+
+.class ul li {
+    width: 100%;
+    height: 557px;
+    position: relative;
+    overflow: hidden;
+}
+
+.class ul li:nth-child(1) {
+    background: #a3714e;
+}
+
+.class ul li:nth-child(2) {
+    background: #c0c0c0;
+}
+
+.class ul li a p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.class ul li a video {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    display: none;
+}
+
+.class ul .item1:hover .wood {
+    display: inline;
+}
+
+.class ul .item2:hover .metal {
+    display: inline;
+}
+
+
+/*responsive--------------------------------------------------------------------------------*/
+
+
+/*mobile*/
+
+@media (max-width:767px) {
+    /*main1-----------------------------------------------*/
+    .main1 {
+        width: 100%;
+        margin-top: 10%;
+        position: relative;
+        height: 250px;
+    }
+    .main1 .btn {
+        width: 90%;
+        height: 50px;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main1 .btn .left::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        display: inline-block;
+        transform: rotate(-45deg);
+    }
+    .main1 .btn .right::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        display: inline-block;
+        transform: rotate(45deg);
+    }
+    .main1 .circle a {
+        width: 10px;
+        height: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .main1 .circle a:nth-child(1) div {
+        background: black;
+    }
+    .main1 .circle {
+        width: 20%;
+        position: absolute;
+        left: 50%;
+        bottom: 1%;
+        transform: translate(-50%, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main1 .slide figure {
+        width: 100%;
+        height: 250px;
+    }
+    .main1 .slide figure a img {
+        width: 100%;
+        height: 100%;
+    }
+    .main1 .maintxt {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 2rem;
+        color: #383335;
+        z-index: 2;
+        opacity: 1;
+    }
+    .main1 .maintxt.active{
+        animation: text1 4s forwards infinite;
+        opacity: 0;
+    }
+    
+    @keyframes text1 {
+        0% {
+            top: 52%;
+            opacity: 0;
+        }
+        10% {
+            top: 45%;
+            opacity: 0.3;
+        }
+        30% {
+            top: 52%;
+            opacity: 0.7;
+        }
+        50% {
+            top: 50%;
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+
+    /*main2-----------------------------------------------*/
+    .main2 {
+        width: 100%;
+        margin-top: 15%;
+    }
+    *.main2 div a {
+        font-size: 2rem;
+        text-align: center;
+        color: #bbb5b1;
+        font-family: Oswald;
+        padding-right: 0;
+    }
+    /*이미지1*/
+    .main2 .con-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0 5%;
+    }
+    .main2 .con-1 a {
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-1 figure {
+        width: 100%;
+        height: 200px;
+    }
+    .main2 .con-1 figure img {
+        width: 100%;
+        height: 100%;
+        animation: ease;
+        opacity: 1;
+    }
+    /*이미지2*/
+    .main2 .con-2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 15% 5% 0 5%;
+    }
+    .main2 .con-2 .text1 {
+        text-align: center;
+        padding: 0;
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-2 figure {
+        width: 100%;
+        height: 200px;
+    }
+    .main2 .con-2 figure a img {
+        width: 100%;
+        height: 200px;
+        animation: ease;
+        opacity: 1;
+    }
+    /*이미지3*/
+    .main2 .con-3 {
+        margin: 15% 5% 0 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .main2 .con-3 figure {
+        width: 100%;
+        height: 200px;
+    }
+    .main2 .con-3 figure a img {
+        width: 100%;
+        height: 200px;
+        opacity: 1;
+        animation: ease;
+    }
+    .main2 .con-3 a {
+        animation: ease;
+        opacity: 1;
+    }
+    /*이미지 4*/
+    .main2 .con-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15% 5% 0 5%;
+        flex-direction: column-reverse;
+    }
+    .main2 .con-4 figure {
+        width: 100%;
+        height: 200px;
+    }
+    .main2 .con-4 a {
+        padding: 0;
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-4 figure a img {
+        width: 100%;
+        height: 200px;
+        animation: ease;
+        opacity: 1;
+    }
+    /*Best-----------------------------------------------*/
+    .best {
+        margin: 15% 0;
+    }
+    .best .title {
+        font-size: 2rem;
+        color: #7a6c63;
+        margin-left: 0;
+        text-align: center;
+    }
+    .best .bestitems {
+        width: 100%;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+    .best .bestitems li {
+        width: 40%;
+        margin: 5% 0 5% 0;
+    }
+    .best .bestitems li:first-child {
+        margin-left: 0;
+    }
+    .best .bestitems li:last-child {
+        margin-right: 0;
+    }
+    .best .bestitems li:nth-child(n+3) {
+        display: none;
+    }
+    .best .bestitems li figure {
+        width: 100%;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: 10%;
+    }
+    .best .bestitems li figure img {
+        width: 100%;
+    }
+    .best .bestitems li p {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .best .morebtn {
+        width: 60px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid black;
+    }
+    /*design --------------------------------------------*/
+    .design {
+        width: 100%;
+        margin: 15% 0;
+    }
+    .design .designtitle {
+        width: 90%;
+        margin: 3% auto;
+        text-align: center;
+        font-size: 2rem;
+        color: #7a6c63;
+    }
+    .designcon {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .design .designcon .d1 {
+        width: 100%;
+    }
+    .design .designcon .d1 .d1-1 {
+        width: 100%;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    .design .designcon .d1 .d1-1 img {
+        width: 50%;
+        height: 150px;
+    }
+    .design .designcon .d1 .d1-1 p {
+        width: 45%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(0, 0);
+        font-size: 1rem;
+        text-align: right;
+        animation: none;
+        display: block;
+    }
+    @keyframes a1 {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.3;
+            top: 48%;
+        }
+        70% {
+            opacity: 0.7;
+            top: 51%
+        }
+        100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    .design .designcon .d1 .d1-1 a {
+        width: 45%;
+        height: 30%;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        transform: translate(0, 0);
+        display: block;
+        text-align: right;
+    }
+    .design .designcon .d1 .d1-1 a img {
+        width: 15%;
+        height: 100%;
+        animation: none;
+    }
+    @keyframes a1-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1080deg)
+        }
+    }
+    /* .design .designcon .d1 .d1-1:hover > p{
+        display: block;
+    }
+    .design .designcon .d1 .d1-1:hover > a{
+        display: block;
+    }
+    .design .designcon .d1 .d1-1:hover > img{
+        opacity: 0.5;
+    } */
+    .design .designcon .d1 .d1-2 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 10%;
+        position: relative;
+        text-align: right;
+    }
+    .design .designcon .d1 .d1-2 img {
+        width: 60%;
+        height: 150px;
+    }
+    .design .designcon .d1 .d1-2 p {
+        width: 40%;
+        position: absolute;
+        left: 0;
+        top: 30%;
+        transform: translate(0, -50%);
+        font-size: 1rem;
+        text-align: left;
+        animation: none;
+        display: block;
+    }
+    @keyframes a2 {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.3;
+            top: 48%;
+        }
+        70% {
+            opacity: 0.7;
+            top: 51%
+        }
+        100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    .design .designcon .d1 .d1-2 a {
+        width: 45%;
+        height: 30%;
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+        transform: translate(0, 0);
+        display: block;
+        text-align: left;
+    }
+    /* .design .designcon .d1 .d1-2:hover > p{
+        display: block;
+    }
+    .design .designcon .d1 .d1-2:hover > a{
+        display: block;
+    }
+    .design .designcon .d1 .d1-2:hover > img{
+        opacity: 0.5;
+    } */
+    .design .designcon .d1 .d1-2 a img {
+        width: 15%;
+        height: 100%;
+        animation: none;
+    }
+    @keyframes a2-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1080deg)
+        }
+    }
+    .design .d2 {
+        width: 100%;
+    }
+    .design .d2 .d2-1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .design .d2 .d2-1 img {
+        width: 50%;
+    }
+    .design .designcon .d2 .d2-1 p {
+        width: 45%;
+        position: absolute;
+        right: 0;
+        top: 55%;
+        transform: translate(0, 0);
+        font-size: 1rem;
+        text-align: right;
+        animation: none;
+        display: block;
+    }
+    @keyframes a3 {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.3;
+            top: 48%;
+        }
+        70% {
+            opacity: 0.7;
+            top: 51%
+        }
+        100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    .design .designcon .d2 .d2-1 a {
+        width: 45%;
+        height: 10%;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        transform: translate(0, 0);
+        display: block;
+        text-align: right;
+    }
+    /* .design .designcon .d2 .d2-1:hover > p{
+        display: block;
+    }
+    .design .designcon .d2 .d2-1:hover > a{
+        display: block;
+    }
+    .design .designcon .d2 .d2-1:hover > img{
+        opacity: 0.5;
+    } */
+    .design .designcon .d2 .d2-1 a img {
+        width: 15%;
+        animation: animation;
+    }
+    @keyframes a3-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1080deg)
+        }
+    }
+    /*event----------------------------------------------*/
+    .class {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+    .class p {
+        margin-left: 0%;
+        font-size: 2rem;
+        color: #7a6c63;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .class ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .class ul li {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .class ul li:nth-child(1) {
+        background: #a3714e;
+    }
+    .class ul li:nth-child(2) {
+        background: #c0c0c0;
+    }
+    .class ul li a p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .class ul li a video {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0%;
+        display: none;
+    }
+    .class ul .item1:hover .wood {
+        display: none;
+    }
+    .class ul .item2:hover .metal {
+        display: none;
+    }
+}
+
+
+/*mobile and tablet*/
+
+@media (min-width:768px) and (max-width:1095px) {
+    /*main2----------------------*/
+    .main2 {
+        width: 90%;
+        margin: 10% 5% 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: wrap;
+    }
+    *.main2 div a {
+        padding: 0;
+        font-size: 3rem;
+        text-align: center;
+        color: #bbb5b1;
+        font-family: Oswald;
+    }
+    /*이미지1*/
+    .main2 .con-1 {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0 0 10% 0;
+    }
+    .main2 .con-1 figure img {
+        width: 100%;
+        height: 350px;
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-1 figure {
+        width: 100%;
+        height: 350px;
+    }
+    .main2 .con-1 a {
+        animation: ease;
+        opacity: 1;
+    }
+    /*이미지2*/
+    .main2 .con-2 {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0 0 10% 0;
+    }
+    .main2 .con-2 .text1 {
+        text-align: center;
+        padding: 0;
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-2 figure {
+        width: 100%;
+        height: 350px;
+    }
+    .main2 .con-2 figure a img {
+        width: 100%;
+        height: 350px;
+        animation: ease;
+        opacity: 1;
+    }
+    /*이미지3*/
+    .main2 .con-3 {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .main2 .con-3 figure {
+        width: 100%;
+        height: 350px;
+    }
+    .main2 .con-3 figure a img {
+        width: 100%;
+        height: 350px;
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-3 a {
+        animation: ease;
+        opacity: 1;
+    }
+    /*이미지 4*/
+    .main2 .con-4 {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .main2 .con-4 figure {
+        width: 100%;
+        height: 350px;
+    }
+    .main2 .con-4 figure a img {
+        width: 100%;
+        height: 350px;
+        animation: ease;
+        opacity: 1;
+    }
+    .main2 .con-4 a {
+        animation: ease;
+        opacity: 1;
+    }
+    /*Best--------------------------*/
+    .best {
+        margin: 10% 5% 0 5%;
+    }
+    .best .title {
+        font-size: 3rem;
+        color: #7a6c63;
+        margin-left: 0;
+    }
+    .best .bestitems {
+        display: flex;
+        height: 100%;
+        background: none;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-flow: nowrap;
+        margin-bottom: 10%;
+    }
+    .best .bestitems li {
+        width: 45%;
+        margin: 0;
+    }
+    .best .bestitems li:first-child {
+        margin-left: 0;
+    }
+    .best .bestitems li:last-child {
+        margin-right: 0;
+    }
+    .best .bestitems li:nth-child(n+3) {
+        display: none;
+    }
+    .best .bestitems li figure {
+        width: 100%;
+        height: 70%;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: 10%;
+    }
+    .best .bestitems li figure img {
+        width: 100%;
+    }
+    .best .bestitems li p {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .best .morebtn {
+        width: 60px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid black;
+    }
+    /*design ---------------------------------------------*/
+    .design {
+        width: 100%;
+        margin: 10% 0;
+    }
+    .design .designtitle {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 3rem;
+        color: #7a6c63;
+    }
+    .designcon {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .design .designcon .d1 {
+        width: 68%;
+    }
+    .design .designcon .d1 .d1-1 {
+        width: 100%;
+        position: relative;
+    }
+    .design .designcon .d1 .d1-1 p {
+        width: 40%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+        animation: a1 2.5s forwards;
+        display: block;
+    }
+    @keyframes a1 {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.3;
+            top: 48%;
+        }
+        70% {
+            opacity: 0.7;
+            top: 51%
+        }
+        100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    .design .designcon .d1 .d1-1 a {
+        width: 5%;
+        height: 5%;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, 0);
+        display: block;
+    }
+    .design .designcon .d1 .d1-1 a img {
+        width: 100%;
+        height: 100%;
+        animation: a1-1 2s forwards;
+    }
+    @keyframes a1-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1080deg)
+        }
+    }
+    /* .design .designcon .d1 .d1-1:hover > p{
+        display: block;
+    }
+    .design .designcon .d1 .d1-1:hover > a{
+        display: block;
+    }
+    .design .designcon .d1 .d1-1:hover > img{
+        opacity: 0.5;
+    } */
+    .design .designcon .d1 .d1-1 .designphoto1 {
+        width: 100%;
+        opacity: 0.5;
+    }
+    .design .designcon .d1 .d1-2 {
+        width: 50%;
+        margin-left: 50%;
+        margin-top: 3%;
+        position: relative;
+    }
+    .design .designcon .d1 .d1-2 p {
+        width: 40%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+        animation: a2 2.5s forwards;
+        display: block;
+    }
+    @keyframes a2 {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.3;
+            top: 48%;
+        }
+        70% {
+            opacity: 0.7;
+            top: 51%
+        }
+        100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    .design .designcon .d1 .d1-2 a {
+        width: 8%;
+        height: 8%;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, 0);
+        display: block;
+    }
+    /* .design .designcon .d1 .d1-2:hover > p{
+        display: block;
+    }
+    .design .designcon .d1 .d1-2:hover > a{
+        display: block;
+    }
+    .design .designcon .d1 .d1-2:hover > img{
+        opacity: 0.5;
+    } */
+    .design .designcon .d1 .d1-2 .designphoto2 {
+        width: 100%;
+        opacity: 0.5;
+    }
+    .design .designcon .d1 .d1-2 a img {
+        width: 100%;
+        height: 100%;
+        animation: a2-1 2s forwards;
+    }
+    @keyframes a2-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1080deg)
+        }
+    }
+    .design .d2 {
+        width: 30%;
+    }
+    .design .d2 .d2-1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .design .d2 .d2-1 .designphoto3 {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+    .design .designcon .d2 .d2-1 p {
+        width: 45%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+        animation: a3 2.5s forwards;
+        display: block;
+    }
+    @keyframes a3 {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.3;
+            top: 48%;
+        }
+        70% {
+            opacity: 0.7;
+            top: 51%
+        }
+        100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    .design .designcon .d2 .d2-1 a {
+        width: 10%;
+        height: 10%;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, 0);
+        display: block;
+    }
+    /* .design .designcon .d2 .d2-1:hover > p{
+        display: block;
+    }
+    .design .designcon .d2 .d2-1:hover > a{
+        display: block;
+    }
+    .design .designcon .d2 .d2-1:hover > img{
+        opacity: 0.5; */
+    .design .designcon .d2 .d2-1 a img {
+        width: 100%;
+        animation: a3-1 2s forwards;
+    }
+    @keyframes a3-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1080deg)
+        }
+    }
+    /*class-------------------------------------------------*/
+    .class {
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    .class p {
+        margin-left: 5%;
+        font-size: 3rem;
+        color: #7a6c63;
+    }
+    .class ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .class ul li {
+        width: 50%;
+        height: 400px;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    .class ul .item1 {
+        background: #a3714e;
+    }
+    .class ul .item2 {
+        background: #c0c0c0;
+    }
+    .class ul li a p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .class ul li a video {
+        width: 0;
+        position: absolute;
+        left: 0;
+        top: 0%;
+        display: none;
+    }
+    .class ul .item1:hover .wood {
+        display: none;
+    }
+    .class ul .item2:hover .metal {
+        display: none;
+    }
+}
+
+
+/*pc -------------------------------------------------------------*/
+
+@media (min-width:1095px) and (max-width:1279px) {
+    /*그대로*/
+}
