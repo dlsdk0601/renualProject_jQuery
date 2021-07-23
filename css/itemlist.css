@@ -8,49 +8,69 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
     overflow: hidden;
+}
+.sort1.active{
+    overflow: visible;
 }
 
 .sort1 .menulist {
-    width: 20%;
+    width: 15%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
     text-align: center;
-    border-right: 1px solid black;
+    position: relative;
 }
-
-.sort1 .menulist .selected {
+.sort1 .menulist p{
+    width: 100%; height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
-.sort1 .menulist .selected>div {
-    width: 90%;
+.sort1 .menulist ul{
+    position: absolute;
+    left: 0; top: 100%;
+    width: 100%; height: 100%;
+    background-color: white;
 }
-
-.sort1 .menulist .selected>a {
-    display: block;
-    width: 10%;
-}
-
-.sort1 .menulist li {
+.sort1 .menulist ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    background-color: white;
+    border-left:1px solid black;
+    border-right:1px solid black;
+}
+.sort1 .menulist ul li:nth-of-type(1){
+    border-top: 1px solid black;
+}
+.sort1 .menulist ul li:nth-of-type(5){
+    border-bottom: 1px solid black;
 }
 
-.sort1 span {
+.sort1 .downArrow{
+    display: block;
+    width: 30px; height: 100%;
+    padding: 0;
+    margin: 0;
+    border-right:1px solid black ;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 18%;
-    height: 100%;
-    padding-left: 25%;
 }
 
+.sort1 .submenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    padding-left: 1%;
+}
+.sort1 .submenu span{
+    cursor: pointer;
+}
 .title {
     font-size: 3rem;
     width: 80%;
@@ -98,7 +118,7 @@
     opacity: 0.8;
 }
 
-.itemlist .items {
+.mainlist .items {
     width: 90%;
     padding-top: 40px;
     display: flex;
@@ -107,22 +127,27 @@
     align-items: center;
 }
 
-.itemlist ul li {
-    width: 30%;
-    margin-bottom: 5%;
+.mainlist > ul li {
+    width: 30%; height: 400px;
+    margin-bottom: 10%; 
 }
 
-.itemlist ul li figure {
-    width: 100%;
+.mainlist ul li figure {
+    width: 100%; height: 100%;
 }
 
-.itemlist ul li figure img {
-    width: 100%;
+.mainlist ul li figure img {
+    width: 100%; height: 100%;
 }
 
-.itemlist ul li figure p {
+.mainlist ul li figure p:nth-of-type(1) {
     width: 100%;
     margin-top: 7%;
+    text-align: center;
+}
+.mainlist ul li figure p:nth-of-type(2) {
+    width: 100%;
+    margin-top: 2%;
     text-align: center;
 }
 
