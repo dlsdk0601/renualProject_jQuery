@@ -81,9 +81,40 @@
 }
 
 .sort2 {
-    width: 80%;
+    width: 80%; height: 20%;
     margin: 1% auto;
-    text-align: right;
+    position: relative;
+    
+    direction: rtl;
+}
+.sort2 p{
+    width: 8%; 
+    text-align: center;
+    border: 1px solid black;
+}
+.sort2 img{
+    display: block;
+    position: absolute;
+    right: 0; top: 0;
+    cursor: pointer;
+}
+.sort2 ul{
+    width: 8%; 
+    position: absolute;
+    right: 0; top: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+.sort2 ul.hidden{
+    display: none;
+}
+.sort2 ul li{
+    width: 100%; height: 100%;
+    text-align: center;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sort2 select {
@@ -109,15 +140,14 @@
 
 .itemlist .mainlist nav a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 100%;
-    opacity: 0.8;
 }
-
+.itemlist .mainlist nav a img{
+    width: 100%; height: 100%;
+}
 .mainlist .items {
     width: 90%;
     padding-top: 40px;

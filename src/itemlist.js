@@ -1,4 +1,3 @@
-'use strict';
 
 fetch("data/data_items.json")
 .then( (res) => res.json() )
@@ -30,38 +29,38 @@ const callback = (data)  => {
     //items display function
     let itemList = "";
     const selectedMenu = new Array();
-    const display = (value) => {
+    const display = (arr, value) => {
         if(value == "all"){
-            for(let i = 0; i < data.item.length; i++){ 
+            for(let i = 0; i < arr.length; i++){ 
                 itemList += `<li>
                             <figure>
-                                <a href="detail.html"><img src="${data.item[i].thum}" alt=""></a>
+                                <a href="detail.html"><img src="${arr[i].thum}" alt=""></a>
                                 <a href="detail.html">
-                                    <p>${data.item[i].name}</p><p>${data.item[i].price}</p>
+                                    <p>${arr[i].name}</p><p>${arr[i].price}￦</p>
                                 </a>
                             </figure>
                         </li>`;
             }
         }
         else{
-            for(let i = 0; i < data.item.length; i++){  
-                if(data.item[i].type == value){
+            for(let i = 0; i < arr.length; i++){  
+                if(arr[i].type == value){
                     itemList += `<li>
                                     <figure>
-                                        <a href="detail.html"><img src="${data.item[i].thum}" alt=""></a>
+                                        <a href="detail.html"><img src="${arr[i].thum}" alt=""></a>
                                         <a href="detail.html">
-                                            <p>${data.item[i].name}</p><p>${data.item[i].price}</p>
+                                            <p>${arr[i].name}</p><p>${arr[i].price}￦</p>
                                         </a>
                                     </figure>
                                 </li>`;
-                    selectedMenu.push(data.item[i].sort);
+                    selectedMenu.push(arr[i].sort);
                     }
                 }
             }
         $(".mainlist .items").html(itemList);
         itemList = "";
     }
-    display("all");
+    display( items, "all");
     
     //submenu cange function
     let tagList = " ";
@@ -87,11 +86,81 @@ const callback = (data)  => {
 
         //itemlist change
         $(".mainlist .items").empty();
-        display(lowerTxt);
+        display( items, lowerTxt);
         textChange()
         $(".sort1").removeClass("active");
     });
     
+    //sort2 click event
+    let sortName = "";
+    $("#sort2 img").on("click", function(){
+        $("#sort2 ul").toggleClass("hidden");
+    });
+    $("#sort2 ul li").on("mouseenter", function(){
+        $(this).css("background-color", "gray");
+    });
+    $("#sort2 ul li").on("mouseleave", function(){
+        $(this).css("background-color", "white");
+    });
     
+
+    //sort display
+    const lowPriceItems = new Array();
+    const highPriceItems = new Array();
+    const bestItems = new Array();
+
+    //각 배열에 상품 넣기
+    for(let i = 0; i < data.item.length; i++){
+        lowPriceItems.push(data.item[i]);
+    }
+    for(let i = 0; i < data.item.length; i++){
+        highPriceItems.push(data.item[i]);
+    }
+    for(let i = 0; i < data.item.length; i++){
+        if(data.item[i]["popular"] == "best"){
+            bestItems.push(data.item[i]);
+        }
+    }
     
+
+    //낮은 가격순 함수
+    function lowSorting(a, b){
+        if(a.price == b.price){
+            return 0;
+        }
+        return a.price > b.price ? 1 : -1
+    }
+    //높은 가격순 함수 
+    function highSorting(a, b){
+        if(a.price == b.price){
+            return 0;
+        }
+        return a.price < b.price ? 1 : -1
+    }
+    //해당하는 분류로 재분류
+    lowPriceItems.sort(lowSorting);
+    highPriceItems.sort(highSorting);
+    
+    //li click event
+    $("#sort2 ul li").on("click", function(){
+
+        //hidden ul and text change
+        $("#sort2 ul").addClass("hidden");
+        sortName = $(this).text();
+        $("#sort2 p").text(sortName);
+
+        if(sortName == "All"){
+            display(items, "all");
+        }else if(sortName == "Low price"){
+            display(lowPriceItems, "all");
+        }else if(sortName == "High price"){
+            display(highPriceItems, "all");
+        }else if(sortName == "Best"){
+            display(bestItems, "all");
+        }
+
+    });
+
+
+    //end
 };

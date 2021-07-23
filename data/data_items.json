@@ -4,441 +4,481 @@
             "name": "Tarva Bed",
             "type": "diy",
             "sort": "bed",
+            "popular": "best",
             "thum": "img/DIY/bed/item1/thum.jpg",
             "detailphoto": "img/DIY/bed/item1/detail1.jpg, img/DIY/bed/item1/detail2.jpg, img/DIY/bed/item1/detail3.jpg, img/DIY/bed/item1/detail4.jpg",
             "detailtext1": "잘 마모되지 않는 소나무 원목 소재는 나뭇결, 색상, 텍스처의 자연적 특성 덕분에 제품마다 독특한 개성을 선사합니다.",
             "detailtext2": "침대 아래에는 수납상자를 넣어둘 공간이 충분하므로 추가 이불과 베개 등의 물품을 보관하기에 안성맞춤입니다.",
             "size": "(W)9800*(D)2090*(H)92mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Troller DIY furniture",
             "type": "diy",
-            "sort": "bed", 
+            "sort": "bed",
+            "popular": "unbest", 
             "thum": "img/DIY/bed/item2/thum.jpg",
             "detailphoto": "img/wood/bed/item2/detail1.jpg, img/wood/bed/item2/detail2.jpg, img/wood/bed/item2/detail3.jpg, img/wood/bed/item2/detail4.jpg",
             "detailtext1": "침대 사이드 어느 곳에나 높이나 선반의 위치를 적절하게 디자인한 가구입니다.",
             "detailtext2": "견고하고 깔끔한 피나무 합판으로 만든 우든 이동웨건은 주방이나 거실 상업공간에서 수납정리 함께 해줍니다.",
             "size": "(W)390*(D)300*(H)830",
-            "price": "200,000￦"
+            "price": 200000
         },
         {
             "name": "Baille Dressing Table",
             "type": "diy",
-            "sort": "bed",                   
+            "sort": "bed",
+            "popular": "unbest",                   
             "thum": "img/DIY/bed/item3/thum.jpg",
             "detailphoto": "img/DIY/bed/item3/detail1.jpg, img/DIY/bed/item3/detail2.jpg, img/DIY/bed/item3/detail3.jpg, img/DIY/bed/item3/detail4.jpg",
             "detailtext1": "바일레는 단순하지만 풍부한 표현력으로 슈퍼 미니멀을 지향합니다. 다양한 사용자의 취향과 공간을 배려하여 유연한 변주가 가능하도록 실용적인 라인업으로 갖췄습니다.",
             "detailtext2": "스타일링에 따라 공간의 표정이 달라지는 바일레는, 사용자의 감각과 개성으로 생명력을 얻습니다. 바일레 시리즈로 내재되었던 감각을 깨워보세요.",
             "size": "(W)1000*(D)498*(H)740mm",
-            "price": "80,000￦"
+            "price": 80000
         },
         {
             "name": "Baille four drawers",
             "type": "diy",
             "sort": "bed",
+            "popular": "best",
             "thum": "img/DIY/bed/item4/thum.jpg",
             "detailphoto": "img/DIY/bed/item4/detail1.jpg, img/DIY/bed/item4/detail2.jpg, img/DIY/bed/item4/detail3.jpg, img/DIY/bed/item4/detail4.jpg",
             "detailtext1": "스타일링에 따라 공간의 표정이 달라지는 바일레는, 사용자의 감각과 개성으로 생명력을 얻습니다. 바일레 시리즈로 내재되었던 감각을 깨워보세요.",
             "detailtext2": "바일레는 단순하지만 풍부한 표현력으로 슈퍼 미니멀을 지향합니다. 다양한 사용자의 취향과 공간을 배려하여 유연한 변주가 가능하도록 실용적인 라인업으로 갖췄습니다.",
             "size": "(W)1196*(D)502*(H)740mm",
-            "price": "350,000￦"
+            "price": 350000
         },
         {
             "name": "Dodat kitchen shelf",
             "type": "diy",
             "sort": "kitchen",
+            "popular": "best",
             "thum": "img/DIY/kitchen/item1/thum.jpg",
             "detailphoto": "img/DIY/kitchen/item1/detail1.jpg, img/DIY/kitchen/item1/detail2.jpg, img/DIY/kitchen/item1/detail3.jpg, img/DIY/kitchen/item1/detail4.jpg",
             "detailtext1": "독일'샤트데코'社의 고급스러운 나무결 디자인과 LPM 마감으로 저가 제품에 사용되는 PET / PVC / PP 마감 소재보다 내구성이 뛰어납니다.",
             "detailtext2": "저렴한 가격의 PVC 마감이 아닌 ABS 엣지를 사용하여 높은 내구성과 깔끔한 마감으로 품질을 향상시켰습니다.",
             "size": "(W)1000*(D)394*(H)1130mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Dodat Nomo Ted shelf",
             "type": "diy",
             "sort": "kitchen",
+            "popular": "unbest",
             "thum": "img/DIY/kitchen/item1/thum.jpg",
             "detailphoto": "img/DIY/kitchen/item2/detail1.jpg, img/DIY/kitchen/item2/detail2.jpg, img/DIY/kitchen/item2/detail3.jpg, img/DIY/kitchen/item2/detail4.jpg",
             "detailtext1": "도어에 손잡이를 배제하여 외관을 심플하게 디자인 하였습니다. 손잡이가 없어 불편할 수 있는 요소를 최대한 쉽고 부드럽게 열 수 있도록 하드웨어에 중점을 두었습니다.",
             "detailtext2": "'심플하지만 견고한, 부드러운 곡선과 깔끔한 직선, 간단한 하드웨어로 쉽게 조립하실 수 있는 안정감있는 구조입니다.",
             "size": "(W)597*(D)347*(H)396mm",
-            "price": "100,000￦"
+            "price": 100000
         },
         {
             "name": "Taven kitchen Table",
             "type": "diy",
             "sort": "kitchen",
+            "popular": "unbest",
             "thum": "img/DIY/kitchen/item1/thum.jpg",
             "detailphoto": "img/DIY/kitchen/item3/detail1.jpg, img/DIY/kitchen/item3/detail2.jpg, img/DIY/kitchen/item3/detail3.jpg, img/DIY/kitchen/item3/detail4.jpg",
             "detailtext1": "오히려 제한적인 공간에서 다이닝테이블의 활약은 대단합니다. 가족 공동의 공간에 묵직한 소파 대신 넉넉한 테이블을 배치하고 다이닝과 작업공간으로 활용한다면 공간의 무게감은 덜면서도 일상이 한결 편안해질 수 있답니다. 타벤 원목테이블은 넉넉한 상판을 가졌지만 날렵한 레그라인으로 내추럴하면서도 세련된 집주인의 취향이 돋보여요.",
             "detailtext2": "테이블과 함께 매치하는 것이 정석이지만 무심하게 거실이나 문 앞에 벤치를 두고 걸터앉도록 두는 것도 멋스럽습니다. 등받이가 없는 벤치는 시야를 가리지 않고 손쉽게 옮길 수 있으니 어디에 두어도 안성맞춤입니다. 담백하고 미니멀한 디자인의 BNO1 체어는 타벤 테이블, 벤치와 조화롭게 공존합니다.",
             "size": "(W)1400*(D)850*(H)750mm",
-            "price": "150,000￦"
+            "price": 150000
         },
         {
             "name": "Blasco circle Table",
             "type": "diy",
             "sort": "kitchen",
+            "popular": "unbest",
             "thum": "img/DIY/kitchen/item4/thum.jpg",
             "detailphoto": "img/DIY/kitchen/item4/detail1.jpg, img/DIY/kitchen/item4/detail2.jpg, img/DIY/kitchen/item4/detail3.jpg, img/DIY/kitchen/item4/detail4.jpg",
             "detailtext1": "사용해본 사람들은 그 진가를 안다는 원형테이블은 사각형 테이블보다 쓰임과 활용이 더 뛰어납니다. 정형화 되지 않은 형태와 용도는 공간의 무궁한 변화를 가능케하고 테이블을 둘러싼 공간을 더욱 활력있게 만들어 줍니다.",
             "detailtext2": "플롬 테이블의 상판을 마감한 고압력 라미네이트(HPL)는 열과 습기에 잘 견디고 이염에도 강해 특히 한식이 주가 되는 한국의 일반적인 가정에 더욱 적합합니다. 뿐만 아니라, 카페, 오피스, 서재 등 다양한 공간에서도 플롬의 뛰어난 소재와 감각적인 디자인은 단연 돋보입니다. 기능성과 미니멀한 디자인을 동시에 충족시키는 것은 쉽지 않습니다.",
             "size": "(W)1000*(D)1000*(H)740mm",
-            "price": "180,000￦"
+            "price": 180000
         },
         {
             "name": "Burno fabrik Sofa",
             "type": "diy",
             "sort": "living",
+            "popular": "unbest",
             "thum": "img/DIY/living/item1/thum.jpg",
             "detailphoto": "img/DIY/living/item1/detail1.jpg, img/DIY/living/item1/detail2.jpg, img/DIY/living/item1/detail3.jpg, img/DIY/living/item1/detail4.jpg",
             "detailtext1": "출시 이후 꾸준히 사랑받은 Bruno 소파는 카페, 서재, 거실에서 레트로한 감성을 극대화 시켜주는 디자인 소파입니다. 균형잡힌 견고한 ASH원목 프레임과 60~70년대 가구를 연상시키는 디테일한 단추마감은 독창적인 외관을 완성합니다.",
             "detailtext2": "휘어짐을 방지하기 위해 바닥 프레임 가운데에 중앙 지지대가 설계되어 있습니다. 지지대가 바닥에 직접 닿을 경우 착석시 딱딱하고 불편함을 느낄 수 있습니다. 보다 나은 착석감을 위해 바닥에서 5mm ~ 10mm 정도 떠 있도록 제작하였습니다.",
             "size": "(W)700*(D)750*(H)780mm",
-            "price": "250,000￦"
+            "price": 250000
         },
         {
             "name": "Dodat nomo drawers",
             "type": "diy",
             "sort": "living",
+            "popular": "unbest",
             "thum": "img/DIY/living/item2/thum.jpg",
             "detailphoto": "img/DIY/living/item2/detail1.jpg, img/DIY/living/item2/detail2.jpg, img/DIY/living/item2/detail3.jpg, img/DIY/living/item2/detail4.jpg",
             "detailtext1": "하나만 두어도 예쁘고 실용적인 헤이 시리즈. 침실에, 홈카페에 다양하게 쓰이는 활용도 높은 디자인은 그대로, 더욱 감성적인 스타일링을 위한 새로운 아이템을 선보입니다.",
             "detailtext2": "헤이 시스루 시리즈는 기존 헤이 시리즈 도어에 무겁지 않고 안전한 플라스틱 반투명 창을 더해 내부가 보일 수 있도록 수납의 효율을 높이면서도 감각적인 디테일은 살렸어요.",
             "size": "(W)600*(D)350*(H)805mm",
-            "price": "320,000￦"
+            "price": 320000
         },
         {
             "name": "Brune 750 sofa Table",
             "type": "diy",
             "sort": "living",
+            "popular": "best",
             "thum": "img/DIY/living/item3/thum.jpg",
             "detailphoto": "img/DIY/living/item3/detail1.jpg, img/DIY/living/item3/detail2.jpg, img/DIY/living/item3/detail3.jpg, img/DIY/living/item3/detail4.jpg",
             "detailtext1": "'브룬'은 심플함을 좋아하지만 지극히 평범하거나 유난한 것에는 손사래를 치는 당신을 위한 시리즈입니다. 작은 차이로 다른 결을 만들어 냅니다. 딱 하나만 놓아도, 다른 가구와 함께 배치하여도 자연스레 어울리는 브룬 750 소파테이블의 매력을 발견해보세요.",
             "detailtext2": "'얇은 원형 파이프 다리와 X자 프레임을 결합해 튼튼한 구조로 만들었습니다. 아래쪽에서 X자로 프레임을 한 번 더 고정해 흔들리지 않습니다.",
             "size": "(W)750*(D)750*(H)375mm",
-            "price": "320,000￦"
+            "price": 320000
         },
         {
             "name": "Blasco talk2 side Table",
             "type": "diy",
             "sort": "living",
+            "popular": "unbest",
             "thum": "img/DIY/living/item3/thum.jpg",
             "detailphoto": "img/DIY/living/item3/detail1.jpg, img/DIY/living/item3/detail2.jpg, img/DIY/living/item3/detail3.jpg, img/DIY/living/item3/detail4.jpg",
             "detailtext1": "거실장 전면에 보이는 다리는 양 끝에 위치하고 후면의 다리는 거실장 본체 안쪽에 위치하여 조형적인 아름다움이 돋보입니다. 또한 다리는 내려갈수록 슬림해지며 간결하고 모던한 디자인으로 제작되었습니다.",
             "detailtext2": "'호두나무'로 잘 알려져있는 수종으로 내구성이 높고 목질이 단단한 최고급 수종에 속합니다. 특히 나무 자체의 중후한 색감과 뚜렷한 나뭇결이 아름다워 특급 호텔이나 고급 리조트의 가구로 주로 제작됩니다. 또한 조직이 단단하고 치밀하여 뒤틀림 등의 변형이 거의 없는 것이 특징입니다.",
             "size": "(W)2100*(D)450*(H)750mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Oak A-Type sliding side Table",
             "type": "wood",
             "sort": "bed",
+            "popular": "unbest",
             "thum": "img/wood/bed/item1/thum.jpg",
             "detailphoto": "img/wood/bed/item1/detail1.jpg, img/wood/bed/item1/detail2.jpg, img/wood/bed/item1/detail3.jpg, img/wood/bed/item1/detail4.jpg",
             "detailtext1": "참나무라 불리우는 화이트오크는 자연스러운 나뭇결과 아름다운 색감으로 고급 실내용 가구로 많이 제작됩니다. 특히 피톤치드를 함유하여 할균 작용효과와 해충의 서식을 억제하여 아토피에도 안전합니다.",
             "detailtext2": "원목의 숨구멍을 막는 우레탄 도장과 달리 천연오일로 마감을 하면 오일이 원목안으로 스며들게 됩니다. 그렇기 때문에 우드올렌스의 가구는 광이 거의 없으며 가구의 표면을 쓸어내리면 나무가 가진 결의 감촉을 그대로 느낄 수 있습니다.",
             "size": "(W)550*(D)400*(H)600mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Header B-Type side Table",
             "type": "wood",
             "sort": "bed",
+            "popular": "unbest",
             "thum": "img/wood/bed/item2/thum.jpg",
             "detailphoto": "img/wood/bed/item2/detail1.jpg, img/wood/bed/item2/detail2.jpg, img/wood/bed/item2/detail3.jpg, img/wood/bed/item2/detail4.jpg",
             "detailtext1": "헤더 시리즈는 선별된 목재와 천연 오일 도장으로, 전문가의 손길을 통해 공정이 이루어집니다. 고목나무 원목의 나뭇결과 자연스러운 멋을 지니고 있어 오래두어도 변함없는 가치를 전하는 헤더 시리즈입니다.",
             "detailtext2": "고목나무는 자연스러운 나뭇결과 무늬, 차분하고 고급스러운 컬러를 지녀 아늑한 분위기를 연출합니다. 또 수분침투율이 낮아 휨이나 뒤틀림 등의 변형이 적고, 강도가 우수하여 스크레치에도 강한 수종입니다. 러버우드의 나뭇결과 자연스러운 멋을 지닌 헤더와 함께 하세요.",
             "size": "(W)500*(D)400*(H)580mm",
-            "price": "200,000￦"
+            "price": 200000
         },
         {
             "name": "Header Closet",
             "type": "wood",
             "sort": "bed",
+            "popular": "unbest",
             "thum": "img/wood/bed/item3/thum.jpg",
             "detailphoto": "img/wood/bed/item3/detail1.jpg, img/wood/bed/item3/detail2.jpg, img/wood/bed/item3/detail3.jpg, img/wood/bed/item3/detail4.jpg",
             "detailtext1": "옷장의 손잡이는 매립형 제작되어 외관이 깔끔하며, 도어를 여닫을 때 편안한 그립감을 느낄 수 있습니다. 모던한 느낌을 담은 헤더 옷장입니다.",
             "detailtext2": "고목나무는 자연스러운 나뭇결과 무늬, 차분하고 고급스러운 컬러를 지녀 아늑한 분위기를 연출합니다. 또 수분침투율이 낮아 휨이나 뒤틀림 등의 변형이 적고, 강도가 우수하여 스크레치에도 강한 수종입니다. 러버우드의 나뭇결과 자연스러운 멋을 지닌 헤더와 함께 하세요.",
             "size": "(W)1000*(D)600*(H)2060mm",
-            "price": "80,000￦"
+            "price": 80000
         },
         {
             "name": "Maister Walnut Neo Dressing Table",
             "type": "wood",
             "sort": "bed",
+            "popular": "best",
             "thum": "img/wood/bed/item4/thum.jpg",
             "detailphoto": "img/wood/bed/item4/detail1.jpg, img/wood/bed/item4/detail2.jpg, img/wood/bed/item4/detail3.jpg, img/wood/bed/item4/detail4.jpg",
             "detailtext1": "월넛 고유의 고급스러움과 아름다운 나뭇결을 그대로 담은 월넛 원목 화장대입니다. 시간이 지날수록 진해지는 월넛 원목만의 색감을 느껴보세요",
             "detailtext2": "우드올렌스는 150년 역사의 독일 브랜드 헤펠레의 하드웨어를 사용하여 가구의 서랍 및 도어 여닫음이 부드럽고, 하드웨어로 인한 잔고장이 극히 드뭅니다.",
             "size": "(W)1400*(D)400*(H)750mm",
-            "price": "350,000￦"
+            "price": 350000
         },
         {
             "name": "Puro Premium Table",
             "type": "wood",
             "sort": "kitchen",
+            "popular": "unbest",
             "thum": "img/wood/bed/item1/thum.jpg",
             "detailphoto": "img/wood/kitchen/item1/detail1.jpg, img/wood/kitchen/item1/detail2.jpg, img/wood/kitchen/item1/detail3.jpg, img/wood/kitchen/item1/detail4.jpg",
             "detailtext1": "퓨로 포세린 식탁은 프리미엄 라인으로 공간의 가치를 높여드립니다. 최상의 품질을 보장하는 100% 이태리산 포세린 상판과 하부다리의 소재를 자유롭게 조합할 수 있습니다. 다이닝 공간을 아름답게 채워줄 퓨로 시리즈입니다.",
             "detailtext2": "포세린을 1300도 이상의 고온에서 고압으로 압축 가공하여 열에 강하며 깨끗한 소재로 우수한 내구성을 자랑합니다. 내열성 항균성을 지니고 있어 오염에 자유로워 테이블 상판 재료로 최고의 선택입니다.",
             "size": "(W)2100*(D)800*(H)750mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Walnut Rione Table",
             "type": "wood",
-            "sort": "kitchen",      
+            "sort": "kitchen",
+            "popular": "best",      
             "thum": "img/wood/bed/item2/thum.jpg",
             "detailphoto": "img/wood/kitchen/item2/detail1.jpg, img/wood/kitchen/item2/detail2.jpg, img/wood/kitchen/item2/detail3.jpg, img/wood/kitchen/item2/detail4.jpg",
             "detailtext1": "상판과 다리는 모두 솔리드 월넛 원목으로 제작되어 월넛 고유의 수려하고 웅장한 나뭇결이 특징입니다. 가든 파티, 티 타임, 플라워 클래스 등 때에 따라 다양한 용도로 활용이 가능한 다용도 테이블입니다.",
             "detailtext2": "'호두나무'로 잘 알려져있는 수종으로 내구성이 높고 목질이 단단한 최고급 수종에 속합니다. 특히 나무 자체의 중후한 색감과 뚜렷한 나뭇결이 아름다워 특급 호텔이나 고급 리조트의 가구로 주로 제작됩니다. 또한 조직이 단단하고 치밀하여 뒤틀림 등의 변형이 거의 없는 것이 특징입니다.",
             "size": "(W)2100*(D)900*(H)750mm",
-            "price": "100,000￦"
+            "price": 100000
         },
         {
             "name": "Walnut root chair",
             "type": "wood",
-            "sort": "kitchen",               
+            "sort": "kitchen",
+            "popular": "unbest",               
             "thum": "img/wood/bed/item3/thum.jpg",
             "detailphoto": "img/wood/kitchen/item3/detail1.jpg, img/wood/kitchen/item3/detail2.jpg, img/wood/kitchen/item3/detail3.jpg, img/wood/kitchen/item3/detail4.jpg",
             "detailtext1": "다리는 밑으로 내려갈수록 슬림해지며, 군더덛기 없는 모던한 디자인으로 제작되었습니다. 또한 뒤의 다리 프레임은 사선 라인을 제작하여 형태미와 완성도를 높였습니다.",
             "detailtext2": "'호두나무'로 잘 알려져있는 수종으로 내구성이 높고 목질이 단단한 최고급 수종에 속합니다. 특히 나무 자체의 중후한 색감과 뚜렷한 나뭇결이 아름다워 특급 호텔이나 고급 리조트의 가구로 주로 제작됩니다. 또한 조직이 단단하고 치밀하여 뒤틀림 등의 변형이 거의 없는 것이 특징입니다.",
             "size": "(W)610*(D)560*(H)850mm",
-            "price": "150,000￦"
+            "price": 150000
         },
         {
             "name": "D-type Table",
             "type": "wood",
             "sort": "kitchen",
+            "popular": "unbest",
             "thum": "img/wood/bed/item4/thum.jpg",
             "detailphoto": "img/wood/kitchen/item4/detail1.jpg, img/wood/kitchen/item4/detail2.jpg, img/wood/kitchen/item4/detail3.jpg, img/wood/kitchen/item4/detail4.jpg",
             "detailtext1": "하드우드인 애쉬 우너목은 뛰어난 내구성을 지녀 장기간 사용에도 변형이 거의 없습니다. 식탁은 애쉬 솔리드 원목을 사용하여 선명하고 아름다운 나뭇결을 담았습니다.",
             "detailtext2": "물푸레나무는 선명한 나뭇결을 지녀 고급스러운 분위기를 연출합니다. 또 강도가 높고 탄성이 좋아서 야구배트 및 악기의 주재료로 사용합니다. 물푸레나무의 중우하고 고급스러운 매력을 만나보시기 바랍니다.",
             "size": "(W)1400*(D)800*(H)750mm",
-            "price": "180,000￦"
+            "price": 180000
         },
         {
             "name": "Puro Square Seramic living Table",
             "type": "wood",
             "sort": "living",
+            "popular": "best",
             "thum": "img/wood/living/item1/thum.jpg",
             "detailphoto": "img/wood/living/item1/detail1.jpg, img/wood/living/item1/detail2.jpg, img/wood/living/item1/detail3.jpg, img/wood/living/item1/detail4.jpg",
             "detailtext1": "천연광물, 세라믹은 1250도에서 고압으로 구워 제작되며 깨끗한 소재로 우수한 내구성을 자랑합니다. 내열성 항균성을 지니고 있어 오염에 자유로워 테이블 상판 재료로 최고의 선택입니다. 타사와 다른 15T 통세라믹으로 충격에 강하며 열, 흡집, 오염 등에 강하여 장기간 깨끗하게 사용이 가능합니다.",
             "detailtext2": "AA등급 고무나무 원목으로 수납장을 제작하여 내구성이 뛰어나고 변형이 적은 점이 특징입니다. 또한 매립형 손잡이로 모던한 형태미가 돋보입니다.",
             "size": "(W)2200*(D)400*(H)750mm",
-            "price": "250,000￦"
+            "price": 250000
         },
         {
             "name": "Puro Square Seramic living Table",
             "type": "wood",
-            "sort": "living", 
+            "sort": "living",
+            "popular": "unbest", 
             "thum": "img/wood/living/item2/thum.jpg",
             "detailphoto": "img/wood/living/item2/detail1.jpg, img/wood/living/item2/detail2.jpg, img/wood/living/item2/detail3.jpg, img/wood/living/item2/detail4.jpg",
             "detailtext1": "거실장 전면에 보이는 다리는 양 끝에 위치하고 후면의 다리는 거실장 본체 안쪽에 위치하여 조형적인 아름다움이 돋보입니다. 또한 다리는 내려갈수록 슬림해지며 간결하고 모던한 디자인으로 제작되었습니다.",
             "detailtext2": "'호두나무'로 잘 알려져있는 수종으로 내구성이 높고 목질이 단단한 최고급 수종에 속합니다. 특히 나무 자체의 중후한 색감과 뚜렷한 나뭇결이 아름다워 특급 호텔이나 고급 리조트의 가구로 주로 제작됩니다. 또한 조직이 단단하고 치밀하여 뒤틀림 등의 변형이 거의 없는 것이 특징입니다.",
             "size": "(W)2100*(D)450*(H)750mm",
-            "price": "320,000￦"
+            "price": 320000
         },
         {
             "name": "Maister Walnut Neo living Table",
             "type": "wood",
             "sort": "living",
+            "popular": "best",
             "thum": "img/wood/living/item3/thum.jpg",
             "detailphoto": "img/wood/living/item3/detail1.jpg, img/wood/living/item3/detail2.jpg, img/wood/living/item3/detail3.jpg, img/wood/living/item3/detail4.jpg",
             "detailtext1": "거실장 전면에 보이는 다리는 양 끝에 위치하고 후면의 다리는 거실장 본체 안쪽에 위치하여 조형적인 아름다움이 돋보입니다. 또한 다리는 내려갈수록 슬림해지며 간결하고 모던한 디자인으로 제작되었습니다.",
             "detailtext2": "'호두나무'로 잘 알려져있는 수종으로 내구성이 높고 목질이 단단한 최고급 수종에 속합니다. 특히 나무 자체의 중후한 색감과 뚜렷한 나뭇결이 아름다워 특급 호텔이나 고급 리조트의 가구로 주로 제작됩니다. 또한 조직이 단단하고 치밀하여 뒤틀림 등의 변형이 거의 없는 것이 특징입니다.",
             "size": "(W)2100*(D)450*(H)750mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Header A-Type Bookshelf ",
             "type": "wood",
             "sort": "living",
+            "popular": "unbest",
             "thum": "img/wood/living/item2/thum.jpg",
             "detailphoto": "img/wood/living/item2/detail1.jpg, img/wood/living/item2/detail2.jpg, img/wood/living/item2/detail3.jpg, img/wood/living/item2/detail4.jpg",
             "detailtext1": "책장의 모서리는 전통 짜맞춤기법으로 고급스러운 입체감을 담아내었으며 정교하게 조립되어 굉장히 견고합니다. 책장의 하드웨어는 문주 댐핑 경첩을 사용했습니다. 부드러운 여닫음으로 원목에 충격을 주지 않아 소음 및 진동이 발생하지 않습니다. ",
             "detailtext2": "고무나무는 자연스러운 나뭇결과 무늬, 차분하고 고급스러운 컬러를 지녀 아늑한 분위기를 연출합니다. 또 수분침투율이 낮아 휨이나 뒤틀림 등의 변형이 적고, 강도가 우수하여 스크레치에도 강한 수종입니다. 리버우드의 나뭇결과 자연스러운 멋을 지닌 헤더와 함께 하세요.",
             "size": "(W)1000*(D)300*(H)1610mm",
-            "price": "100,000￦"
+            "price": 100000
         },
         {
             "name": "Bronze antique Handle",
             "type": "metal",
             "sort": "handle",
+            "popular": "unbest",
             "thum": "img/metal/handle/item1/thum.jpg",
             "detailphoto": "img/metal/handle/item1/detail1.jpg, img/metal/handle/item1/detail2.jpg, img/metal/handle/item1/detail3.jpg, img/metal/handle/item1/detail4.jpg",
             "detailtext1": "구리에 아연을 10~15% 넣어 만든 합금으로, 가공하기가 쉬우며 녹이 슬지 않습니다. 융해된 금속을 주형속에 넣고 응고시켜서 원하는 모양의 금속제품으로 만듭니다.",
             "detailtext2": "제품초기에 표면처리된 이물질이 조금씩 손에 묻을 수 잇습니다. 하지만 시간이 지날수록 표면의 밤색이 서서히 벗겨지면서 제품소재의 금색과 은은히 잘 어우러져 더욱 멋스런 손잡이가 됩니다.",
             "size": "(W)140*(D)28*(H)0mm",
-            "price": "100,000￦"
+            "price": 100000
         },
         {
             "name": "Domus 71 door Handle",
             "type": "metal",
             "sort": "handle",
+            "popular": "unbest",
             "thum": "img/metal/handle/item2/thum.jpg",
             "detailphoto": "img/metal/handle/item2/detail1.jpg, img/metal/handle/item2/detail2.jpg, img/metal/handle/item2/detail3.jpg, img/metal/handle/item2/detail4.jpg",
             "detailtext1": "Backset이란, 문모서리 끝에 55mm로 타공 되어있는 구멍 가운데까지의 거리입니다. 일반적으로 방문, 화장실문, 사무실문 등과 같은 실내용 목재도어는 60mm, 현관문, 철문, 방화문과 같은 외부충입용 도어는 70mm입니다.",
             "detailtext2": "",
             "size": "(W)125*(D)100*(H)160",
-            "price": "20,000￦"
+            "price": 20000
         },
         {
             "name": "Gold funiture Handle",
             "type": "metal",
             "sort": "handle",
+            "popular": "unbest",
             "thum": "img/metal/handle/item3/thum.jpg",
             "detailphoto": "img/metal/handle/item3/detail1.jpg, img/metal/handle/item3/detail2.jpg, img/metal/handle/item3/detail3.jpg, img/metal/handle/item3/detail4.jpg",
             "detailtext1": "모티너의 해상도, 밝기에 따라 제품 색상 등에 다소 차이가 있을 수 있습니다. 제품 사이즈에 다소의 오차라 있을 수 있습니다.",
             "detailtext2": " ",
             "size": "(W)37*(D)21*(H)26mm",
-            "price": "8,000￦"
+            "price": 8000
         },
         {
             "name": "P96 522 Nikel furniture Handle",
             "type": "metal",
             "sort": "handle",
+            "popular": "unbest",
             "thum": "img/metal/handle/item4/thum.jpg",
             "detailphoto": "img/metal/handle/item4/detail1.jpg, img/metal/handle/item4/detail2.jpg, img/metal/handle/item4/detail3.jpg, img/metal/handle/item4/detail4.jpg",
             "detailtext1": "모티너의 해상도, 밝기에 따라 제품 색상 등에 다소 차이가 있을 수 있습니다. 제품 사이즈에 다소의 오차라 있을 수 있습니다.",
             "detailtext2": "",
             "size": "(W)52*(D)20*(H)64mm",
-            "price": "35,000￦"
+            "price": 35000
         },
         {
             "name": "Cork Pendant",
             "type": "metal",
             "sort": "light",
+            "popular": "unbest",
             "thum": "img/metal/light/item1/thum.jpg",
             "detailphoto": "img/metal/light/item1/detail1.jpg, img/metal/light/item1/detail2.jpg, img/metal/light/item1/detail3.jpg, img/metal/light/item1/detail4.jpg",
             "detailtext1": "상담 및 실측 : 상담을 통해 제작의도, 설치공간, 사이즈, 예산 등의 제작 정보를 수집하거나, 실측을 통해 실 정보를 수집합니다.",
             "detailtext2": "디자인, 도면 작성 : 제공받은 정보, 실측한 정보를 토대로 설계도면을 작성합니다. 상담 시의 의견을 반영한 설계도면이 고객님의 의도대로 작성되었는지 확인 합니다.",
             "size": "(W)250*(D)250*(H)470mm",
-            "price": "100,000￦"
+            "price": 100000
         },
         {
             "name": "Cork Pendant A",
             "type": "metal",
             "sort": "light",
+            "popular": "best",
             "thum": "img/metal/light/item2/thum.jpg",
             "detailphoto": "img/metal/light/item2/detail1.jpg, img/metal/light/item2/detail2.jpg, img/metal/light/item2/detail3.jpg, img/metal/light/item2/detail4.jpg",
             "detailtext1": "상담 및 실측 : 상담을 통해 제작의도, 설치공간, 사이즈, 예산 등의 제작 정보를 수집하거나, 실측을 통해 실 정보를 수집합니다.",
             "detailtext2": "디자인, 도면 작성 : 제공받은 정보, 실측한 정보를 토대로 설계도면을 작성합니다. 상담 시의 의견을 반영한 설계도면이 고객님의 의도대로 작성되었는지 확인 합니다.",
             "size": "(W)600*(D)350*(H)400mm",
-            "price": "250,000￦"
+            "price": 250000
         },
         {
             "name": "Thema wall Light-Type A",
             "type": "metal",
             "sort": "light",
+            "popular": "unbest",
             "thum": "img/metal/light/item3/thum.jpg",
             "detailphoto": "img/metal/light/item3/detail1.jpg, img/metal/light/item3/detail2.jpg, img/metal/light/item3/detail3.jpg, img/metal/light/item3/detail4.jpg",
             "detailtext1": "색상 : 백색, 회색, 흑색",
             "detailtext2": " 재질 : AL 다이캐스팅 ",
             "size": "(W)90*(D)125*(H)120mm",
-            "price": "150,000￦"
+            "price": 150000
         },
         {
             "name": "Opera Pendant Lgith",
             "type": "metal",
             "sort": "light",
+            "popular": "unbest",
             "thum": "img/metal/light/item4/thum.jpg",
             "detailphoto": "img/metal/light/item4/detail1.jpg, img/metal/light/item4/detail2.jpg, img/metal/light/item4/detail3.jpg, img/metal/light/item4/detail4.jpg",
             "detailtext1": "크리스마스 특별한 인테리어 소품이 되어줄 크리스마스 미니어처 패키지입니다. 아이들도 좋아할 아기자기한 디자인과 높은 퀄리티로 만들어져 사랑한느 이에게 전하는 크리스마스 선물로 추천드리는 상품입니다.",
             "detailtext2": "처실제 전구가 달려있어 밤에는 무드등으로도 사용이 가능한 실용적인 아이템입니다. 올 크리스마스엔 미니어처 채키지를 가족, 친구, 연인과 함께 만들며 즐거운 시간을 보내세요.",
             "size": "(W)345*(D)345*(H)270mm",
-            "price": "100,000￦"
+            "price": 100000
         },
         {
             "name": "Latan nature Carpet",
             "type": "deco",
             "sort": "handmade",
+            "popular": "unbest",
             "thum": "img/Deco/Handmade/item1/thum.jpg",
             "detailphoto": "img/DIY/Handmade/item1/detail1.jpg, img/DIY/Handmade/item1/detail2.jpg, img/DIY/Handmade/item1/detail3.jpg, img/DIY/Handmade/item1/detail4.jpg",
             "detailtext1": "기존판매되는 천연수초 카페트의 까슬거리는 단점을 보완하고 장점은 그대로 살려 제작되었으며, 폴리에스터100% 소재로 내츄럴한 디자인의 멋스러운 제품입니다.",
             "detailtext2": "라탄 인테리어로 내 집에서 휴양지 감성을 느껴보세요. 감성적인 내츄럴한 색감과 청량하고 시원한 느낌을 주는 카페트 입니다.",
             "size": "(W)9800*(D)2090*(H)92mm",
-            "price": "120,000￦"
+            "price": 120000
         },
         {
             "name": "Plise Cupe Cup",
             "type": "deco",
             "sort": "handmade",
+            "popular": "unbest",
             "thum": "img/Deco/Handmade/item2/thum.jpg",
             "detailphoto": "img/Deco/Handmade/item2/detail1.jpg, img/Deco/Handmade/item2/detail2.jpg, img/Deco/Handmade/item2/detail3.jpg, img/Deco/Handmade/item2/detail4.jpg",
             "detailtext1": "유리 제품 특성상 강한 충격, 갑작스러운 온도 변화는 균열이나 깨짐의 원인이 됩니다. ",
             "detailtext2": "수작업으로 제작되는 유리 제품 생산 과정의 특성상 비대칭, 줄모양, 스크래치, 기포, 입구 뭉침 현상, 찍힘 등이 발생할 수 있으며 이는 불량이 아닌 유리 제품의 공정상의 특성으로 취급되오니 구매 시 참고해주세요.",
             "size": "(W)105*(D)110*(H)160",
-            "price": "20,000￦"
+            "price": 20000
         },
         {
             "name": "Apptrack fabrik Poster",
             "type": "deco",
             "sort": "handmade",
+            "popular": "best",
             "thum": "img/Deco/Handmade/item3/thum.jpg",
             "detailphoto": "img/Deco/Handmade/item3/detail1.jpg, img/Deco/Handmade/item3/detail2.jpg, img/Deco/Handmade/item3/detail3.jpg, img/Deco/Handmade/item3/detail4.jpg",
             "detailtext1": "해당 상품은 지정일 배송이 되지 않습니다. 모니터 사양에 따라 화면과 실제 제품과의 차이가 있을 수 있으며, 빈티지 스타일로 제작되는 제품으로 종이포스터 대비 인쇄가 흐릴 수 있는 점 참고해주세요.",
             "detailtext2": " ",
             "size": "(W)1000*(D)400*(H)0mm",
-            "price": "8,000￦"
+            "price": 8000
         },
         {
             "name": "Notinghill fanta check Cutton",
             "type": "deco",
             "sort": "handmade",
+            "popular": "unbest",
             "thum": "img/Deco/Handmade/item4/thum.jpg",
             "detailphoto": "img/Deco/Handmade/item4/detail1.jpg, img/Deco/Handmade/item4/detail2.jpg, img/Deco/Handmade/item4/detail3.jpg, img/Deco/Handmade/item4/detail4.jpg",
             "detailtext1": "내츄럴한 분위기를 내고 싶을때, 커튼하나로 큰 변화를 줄 수있습니다.",
             "detailtext2": "주방, 견환앞, 카페, 작은 창, 세탁실, 탈의실 등 다양한 연출이 가능합니다.",
             "size": "(W)1350*(D)1500*(H)0mm",
-            "price": "35,000￦"
+            "price": 35000
         },
         {
             "name": "Lupffy Keyling",
             "type": "deco",
             "sort": "miniature",
+            "popular": "unbest",
             "thum": "img/Deco/Miniature/item1/thum.jpg",
             "detailphoto": "img/Deco/Miniature/item1/detail1.jpg, img/Deco/Miniature/item1/detail2.jpg, img/Deco/Miniature/item1/detail3.jpg, img/Deco/Miniature/item1/detail4.jpg",
             "detailtext1": "선명한 양면 인쇄로 언제 어디서든 잔망스러움이 뿜뿜",
             "detailtext2": "이쁜 꼬까옷을 입은 루피의 잔망스러움을 좋아하는 사람을 위한 루피 키링",
             "size": "(W)30*(D)50*(H)0mm",
-            "price": "10,000￦"
+            "price": 10000
         },
         {
             "name": "Autoart Bugatti 573C",
             "type": "deco",
             "sort": "miniature",
+            "popular": "unbest",
             "thum": "img/Deco/Miniature/item2/thum.jpg",
             "detailphoto": "img/Deco/Miniature/item2/detail1.jpg, img/Deco/Miniature/item2/detail2.jpg, img/Deco/Miniature/item2/detail3.jpg, img/Deco/Miniature/item2/detail4.jpg",
             "detailtext1": "오토아트는 1998년에 홍콩에서 설립한 자동차 다이캐스트 모형 제조 업체 입니다. 수작업으로 만들어지는 다이캐스트 브랜드중 하나입니다.",
             "detailtext2": "제품 라인에는 퍼포먼스, 밀레니엄, 시그니처, 컴포짓, 디오라마 장식품 세트, 레이싱 디비젼, 열쇠고리 시리즈 등등 여러가지의 제품을 생산하고 있으며, 스포츠카, 레이싱카, 클래식차 등 다양한 실제 자동차 제조사에 라이선스를 보유하고 있다.",
             "size": "(W)600*(D)350*(H)400mm",
-            "price": "250,000￦"
+            "price": 250000
         },
         {
             "name": "Miniature between Books",
             "type": "deco",
             "sort": "miniature",
+            "popular": "unbest",
             "thum": "img/Deco/Miniature/item3/thum.jpg",
             "detailphoto": "img/Deco/Miniature/item3/detail1.jpg, img/Deco/Miniature/item3/detail2.jpg, img/Deco/Miniature/item3/detail3.jpg, img/Deco/Miniature/item3/detail4.jpg",
             "detailtext1": " 본 상품은 해외직구 상품입니다. 배송기간은 주문 후 영업일 기준 2주정도 소요되니 참고하여 여유롭게 주문해주시기 바랍니다.",
             "detailtext2": " ",
             "size": "(W)100*(D)205*(H)285mm",
-            "price": "150,000￦"
+            "price": 150000
         },
         {
             "name": "Christmas miniature package",
             "type": "deco",
             "sort": "miniature",
+            "popular": "unbest",
             "thum": "img/Deco/Miniature/item4/thum.jpg",
             "detailphoto": "img/Deco/Miniature/item4/detail1.jpg, img/Deco/Miniature/item4/detail2.jpg, img/Deco/Miniature/item4/detail3.jpg, img/Deco/Miniature/item4/detail4.jpg",
             "detailtext1": "크리스마스 특별한 인테리어 소품이 되어줄 크리스마스 미니어처 패키지입니다. 아이들도 좋아할 아기자기한 디자인과 높은 퀄리티로 만들어져 사랑한느 이에게 전하는 크리스마스 선물로 추천드리는 상품입니다.",
             "detailtext2": "처실제 전구가 달려있어 밤에는 무드등으로도 사용이 가능한 실용적인 아이템입니다. 올 크리스마스엔 미니어처 채키지를 가족, 친구, 연인과 함께 만들며 즐거운 시간을 보내세요.",
             "size": "(W)210*(D)125*(H)145mm",
-            "price": "100,000￦"
+            "price": 100000
         }
     ]
 
