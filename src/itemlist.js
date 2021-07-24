@@ -28,8 +28,9 @@ const callback = (data)  => {
 
     //items display function
     let itemList = "";
-    const selectedMenu = new Array();
-    const display = (arr, value) => {
+    let selectedMenu = new Array();
+    let subMenuList = new Array();
+    function display(arr, value){
         if(value == "all"){
             for(let i = 0; i < arr.length; i++){ 
                 itemList += `<li>
@@ -43,20 +44,19 @@ const callback = (data)  => {
             }
         }
         else{
-            for(let i = 0; i < arr.length; i++){  
-                if(arr[i].type == value){
-                    itemList += `<li>
-                                    <figure>
-                                        <a href="detail.html"><img src="${arr[i].thum}" alt=""></a>
-                                        <a href="detail.html">
-                                            <p>${arr[i].name}</p><p>${arr[i].price}￦</p>
-                                        </a>
-                                    </figure>
-                                </li>`;
-                    selectedMenu.push(arr[i].sort);
-                    }
-                }
+            selectedMenu = arr.filter( item => item.type == value);
+            for(let i = 0; i < selectedMenu.length; i++){
+                itemList += `<li>
+                                <figure>
+                                    <a href="detail.html"><img src="${selectedMenu[i].thum}" alt=""></a>
+                                    <a href="detail.html">
+                                        <p>${selectedMenu[i].name}</p><p>${selectedMenu[i].price}￦</p>
+                                    </a>
+                                </figure>
+                            </li>`;
+                subMenuList.push(selectedMenu[i].sort);
             }
+        }
         $(".mainlist .items").html(itemList);
         itemList = "";
     }
@@ -66,14 +66,14 @@ const callback = (data)  => {
     let tagList = " ";
     function textChange(){
         $("#top .submenu").empty();
-        const set = Array.from(new Set(selectedMenu));
+        const set = Array.from(new Set(subMenuList));
 
         for(let i = 0; i < set.length; i++){
             tagList += `<span>${set[i]}</span>`;
         }
         $("#top .submenu").html(tagList);
         tagList =" ";
-        selectedMenu.splice(0, selectedMenu.length);
+        subMenuList.splice(0, subMenuList.length);
     }
 
     //메뉴 클릭 이벤트
