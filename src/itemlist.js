@@ -16,50 +16,46 @@ const callback = (data)  => {
     $("#top .menulist ul li").on("mouseleave", function(){
         $(this).css("background-color", "white");
     });
-    
-
-    
 
     //Json-data in Array
-    const items = new Array();
-    for(let i = 0; i < data.item.length; i++){
-        items.push(data.item[i]);
-    }
-
+    const items = data.item.slice();
+    let selectedMenu = data.item.slice();
+    // data.item.map(item => items.push(item));
+    // data.item.map(item => selectedMenu.push(item));
+    
+    
     //items display function
     let itemList = "";
-    let selectedMenu = new Array();
     let subMenuList = new Array();
+
     function display(arr, value){
         if(value == "all"){
-            for(let i = 0; i < arr.length; i++){ 
-                itemList += `<li>
-                            <figure>
-                                <a href="detail.html"><img src="${arr[i].thum}" alt=""></a>
-                                <a href="detail.html">
-                                    <p>${arr[i].name}</p><p>${arr[i].price}￦</p>
-                                </a>
-                            </figure>
-                        </li>`;
-            }
+            itemList = arr.map(item => createHTMLString(item)).join("");
+            $(".mainlist .items").html(itemList);   
         }
         else{
+            selectedMenu = [];
             selectedMenu = arr.filter( item => item.type == value);
-            for(let i = 0; i < selectedMenu.length; i++){
-                itemList += `<li>
-                                <figure>
-                                    <a href="detail.html"><img src="${selectedMenu[i].thum}" alt=""></a>
-                                    <a href="detail.html">
-                                        <p>${selectedMenu[i].name}</p><p>${selectedMenu[i].price}￦</p>
-                                    </a>
-                                </figure>
-                            </li>`;
-                subMenuList.push(selectedMenu[i].sort);
-            }
+            itemList = selectedMenu.map(item => createHTMLString(item)).join("");
+            $(".mainlist .items").html(itemList); 
+            selectedMenu.map( item => subMenuList.push( item.sort ) );
         }
-        $(".mainlist .items").html(itemList);
         itemList = "";
     }
+
+    //li tag return.
+    function createHTMLString(item){
+        return `<li>
+                    <figure>
+                        <a href="detail.html"><img src="${item.thum}" alt=""></a>
+                        <a href="detail.html">
+                            <p>${item.name}</p><p>${item.price}￦</p>
+                        </a>
+                    </figure>
+                </li>`;
+    }
+
+    //default Page
     display( items, "all");
     
     //submenu cange function
@@ -104,25 +100,8 @@ const callback = (data)  => {
     });
     
 
-    //sort display
-    const lowPriceItems = new Array();
-    const highPriceItems = new Array();
-    const bestItems = new Array();
 
-    //각 배열에 상품 넣기
-    for(let i = 0; i < data.item.length; i++){
-        lowPriceItems.push(data.item[i]);
-    }
-    for(let i = 0; i < data.item.length; i++){
-        highPriceItems.push(data.item[i]);
-    }
-    for(let i = 0; i < data.item.length; i++){
-        if(data.item[i]["popular"] == "best"){
-            bestItems.push(data.item[i]);
-        }
-    }
     
-
     //낮은 가격순 함수
     function lowSorting(a, b){
         if(a.price == b.price){
@@ -138,27 +117,41 @@ const callback = (data)  => {
         return a.price < b.price ? 1 : -1
     }
     //해당하는 분류로 재분류
-    lowPriceItems.sort(lowSorting);
-    highPriceItems.sort(highSorting);
+    // lowPriceItems.sort(lowSorting);
+    // highPriceItems.sort(highSorting);
     
-    //li click event
+    //분류하는 함수
+    //sort display
+    let lowPriceItems = new Array();
+    let highPriceItems = new Array();
+    let bestItems = new Array();
     $("#sort2 ul li").on("click", function(){
 
         //hidden ul and text change
         $("#sort2 ul").addClass("hidden");
         sortName = $(this).text();
         $("#sort2 p").text(sortName);
-
+        
+        console.log(selectedMenu);
         if(sortName == "All"){
-            display(items, "all");
+            display(selectedMenu, "all");
         }else if(sortName == "Low price"){
+            lowPriceItems = selectedMenu.slice();
+            lowPriceItems.sort(lowSorting);
             display(lowPriceItems, "all");
         }else if(sortName == "High price"){
+            highPriceItems = selectedMenu.slice();
+            highPriceItems.sort(highSorting);
             display(highPriceItems, "all");
         }else if(sortName == "Best"){
+            selectedMenu.map(item => {
+                if(item["popular"] == "best"){
+                    bestItems.push(item);
+                }
+            });
             display(bestItems, "all");
+            bestItems = [];
         }
-
     });
 
 
