@@ -50,6 +50,6 @@ $(".best .bestitems li").on("mouseleave", function(){
 //more button
 $(".best .morebtn").on("click", function(e){
     // e.preventDefault();
-    localStorage.sort = "best";
-    localStorage.type = "all";
+    localStorage.sort = "BEST";
+    localStorage.type = "ALL";
 });
