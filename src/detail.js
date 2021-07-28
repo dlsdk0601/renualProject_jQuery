@@ -24,7 +24,7 @@ function loadItem(data){
         }
     }
 
-   
+
     //서브 사진 값 들고와서, 배열로 저장(모든 주소가 한 문자열로 가져와짐)
     const photoString = selectedItem[0].detailphoto;
     const photoArray = photoString.split(", ");
@@ -127,14 +127,20 @@ function loadItem(data){
     });
 
     //메뉴 클릭 이벤트
-    let lowerTxt;
+    let typeLower;
     $("#top .menulist ul li").on("click", function(){
-        //Menu name, title change
-        const txt = $(this).text();
-        lowerTxt = txt.toLowerCase();
-        $("#top .menulist p").text(txt);
-        $(".title").text(txt);
+        typeLower = $(this).text();
+        localStorage.type =  typeLower.toLowerCase();
+        location.href = "itemlist.html";
     });
+
+
+    //handy bottom button
+    $(".container .bottombar .buy").on("click", function(e){
+        e.preventDefault();
+        $(".container .side").toggleClass("active");
+    })
+    
 
     
     //end

@@ -483,40 +483,100 @@
 
 @media (max-width:943px) {
     /*메뉴-------------------------------*/
+
     .sort1 {
-        width: 80%;
-        height: 40%;
-        margin: 20% 10% 10% 10%;
+        width: 40%;
+        height: 40px;
+        margin: 15% auto;
         border: 0px solid black;
         display: block;
+        justify-content: center;
+        align-items:  center;
+        position: relative;
     }
+    
     .sort1 .menulist {
-        width: 50%;
-        height: 30%;
+        width: 90%;
+        height: 25px;
         display: block;
-        position: static;
+        position: relative;
         margin: 0 auto;
-        border: 1px solid black;
-        overflow: hidden;
+        /* border: 1px solid black; */
+        padding: 0;
     }
-    .sort1 span {
+    .sort1 .menulist p{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+    .sort1 .menulist ul{
+        position: absolute;
+        left: -0; top: 95%;
+        width: 100%; height: 100%;
+        background-color: white;
+        display: none;
+    }
+    .sort1 .menulist ul.active{
+        display: block;
+    }
+    .sort1 .menulist ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        background-color: white;
+        border-left:1px solid black;
+        border-right:1px solid black;
+    }
+    .sort1 .menulist ul li:nth-of-type(1){
+        border-top: 1px solid black;
+    }
+    .sort1 .menulist ul li:nth-of-type(5){
+        border-bottom: 1px solid black;
+    }
+    .sort1 .downArrow{
+        position: absolute;
+        right: 5%; top: 0;
+        display: block;
+        width: 28px; height: 28px;
+        padding: 0; margin: 0;
+        border-right:0px solid black ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sort1 .submenu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 100%;
+        height: 100%;
         padding-left: 0;
-        margin: 5% auto;
-        border-left: 0px solid black;
+        margin: 10% auto;
+    }
+    .sort1 .submenu span{
+        cursor: pointer;
+        margin-left: 0;
+    
+    }
+    .sort1 .submenu span[active="1"]{
+        font-size: 1.5rem;
     }
     .title {
         font-size: 2rem;
         width: 80%;
-        margin: 0 auto;
+        margin: 5% auto;
         text-align: center;
         border-bottom: 0px solid black;
         border-top: 1px solid black;
-        padding-bottom: 30px;
+        padding: 10px 0;
     }
+
+    
     /*상품 정보-----------------------------------------------*/
     .container {
         width: 100%;
@@ -639,7 +699,7 @@
         transform: rotate(45deg);
     }
     /*사이드 창 ------------------------------------------------------*/
-    .container .side {
+    .container .side.active {
         width: 80%;
         height: 68vh;
         margin: 0 auto;
@@ -648,10 +708,10 @@
         top: 100px;
         bottom: 0;
         flex-grow: 1;
-        background: white;
+        background-color: white;
         overflow: hidden;
-        display: none;
     }
+    
     /* .container .side:hover{
     width: 30%; height: 80vh;
     margin-top: 10%;
@@ -941,7 +1001,7 @@
         top: 40%;
         right: 0;
     }
-    .container .side:hover {
+    .container .side.active {
         width: 30%;
         height: 80vh;
         margin-top: 10%;
@@ -952,11 +1012,12 @@
         background: none;
         flex-grow: 1;
     }
-    .container .side:hover>.mininame {
-        display: none;
+    .container .side .mininame{
+        height: 65.5px;
+        text-align: left;
     }
     .container .side .mininame>img {
-        width: 100%;
+        /* width: 100%; */
         height: 100%;
     }
     .container .side .name {

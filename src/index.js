@@ -11,10 +11,14 @@ $(".regular").slick({
     
 $(window).on("scroll", function(){
     const scr = $(".main2 .con-1").offset().top;
-    console.log("콘텐츠:" + scr);
-    console.log("브라우저 높이값:" + $(window).height());
-    console.log("스크롤값:" + scrollY);
+    const windowHeight = $(this).height()
+    // console.log("콘텐츠:" + scr);
+    // console.log("브라우저 높이값:" + $(this).height());
+    // console.log("스크롤값:" + scrollY);
 
-    // if(scr )
+    if((scr - windowHeight) < scrollY){
+        console.log("here");
+        $(".main2 .con-1 a").addClass("active");
+    }
 });
 

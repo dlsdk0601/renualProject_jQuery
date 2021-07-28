@@ -5,6 +5,10 @@ fetch("data/data_items.json")
 
 const callback = (data)  => {
     
+    //Json-data in Array
+    const items = data.item.slice();
+    let selectedMenu = data.item.slice();
+    
     //mainMenu css event
     $("#top .downArrow").on("click", function(e){
         e.preventDefault();
@@ -20,9 +24,7 @@ const callback = (data)  => {
         $(this).css("background-color", "white");
     });
 
-    //Json-data in Array
-    const items = data.item.slice();
-    let selectedMenu = data.item.slice();
+    
     
     
     //items display function
@@ -31,6 +33,10 @@ const callback = (data)  => {
     let lowPriceItems = new Array();
     let highPriceItems = new Array();
     let bestItems = new Array();
+    let tagList = " ";
+    let lowerTxt;
+    let upperTxt;
+    let sortName = "All";
 
     function display(arr, sort){
         if(sort == "All"){
@@ -50,9 +56,35 @@ const callback = (data)  => {
             println(bestItems);
             bestItems = [];
         }
+        clcikEvent();
         itemList = "";
     }
+
     
+    //상세페이지에서 넘어 왓을 경우
+    if( localStorage.type != undefined){
+        lowerTxt = localStorage.type;
+        upperTxt = lowerTxt.toUpperCase();
+        $(".mainlist .items").empty();
+        if(lowerTxt == "all"){
+            selectedMenu = items.filter(item => true);
+            display(selectedMenu, "All");
+            textChange();
+        }else{
+            selectedMenu = items.filter( item => item.type == lowerTxt );
+            selectedMenu.map( item => subMenuList.push(item.sort) );
+            textChange();
+            display(selectedMenu, sortName);
+            $("#top .menulist p").text( upperTxt );
+            $(".title").text(upperTxt);
+        }
+        localStorage.removeItem('type');
+    }else{
+        //default Page
+        display( items, "All" );
+    }
+    
+
     //create HTML Tag
     function createHTMLString(item){
         return `<li data-id="${item.id}">
@@ -65,15 +97,54 @@ const callback = (data)  => {
     //print function
     function println(arr){
         itemList = arr.map(item => createHTMLString(item)).join("");
-        $(".mainlist .items").html(itemList); 
+        $(".mainlist .items").html(itemList);
+        
     }
 
-    //default Page
-    display( items, "All" );
+    //메뉴 클릭 이벤트
+    $("#top .menulist ul li").on("click", function(){
+        //Menu name, title change
+        const txt = $(this).text();
+        lowerTxt = txt.toLowerCase();
+        $("#top .menulist p").text(txt);
+        $(".title").text(txt);
+
+        //itemlist change
+        $(".mainlist .items").empty();
+        if(lowerTxt == "all"){
+            selectedMenu = items.filter(item => true);
+            display(selectedMenu, "All");
+            textChange();
+        }else{
+            selectedMenu = items.filter(item => item.type == lowerTxt );
+            selectedMenu.map( item => subMenuList.push(item.sort) );
+            textChange();
+            display(selectedMenu, sortName);
+        }
+        
+
+        $(".sort1").removeClass("active");
+        
+    });
+
+    //서브메뉴 클릭 이벤트
+    $(".sort1 .submenu").on("click", function(e){
+        const name = e.target.dataset.sub;
+        if(name != undefined){
+            selectedMenu = items.filter(item => (item.sort == name) && (item.type == lowerTxt));
+            display( selectedMenu, sortName);
+            const elSpan = $(".sort1 .submenu span");
+            elSpan.attr("active", "0");
+            for(let i = 0; i < elSpan.length; i++){
+                if( elSpan.eq(i).attr("data-sub") == name ){
+                    elSpan.eq(i).attr("active", "1");
+                }
+            }
+        }
+        
+    });
     
     //submenu change function
-    let tagList = " ";
-   
     function textChange(){
         $("#top .submenu").empty();
         const set = Array.from(new Set(subMenuList));
@@ -85,10 +156,7 @@ const callback = (data)  => {
         subMenuList.splice(0, subMenuList.length);
     }
 
-    
-    
     //sort2 click event
-    let sortName = "All";
     $("#sort2 img").on("click", function(){
         $("#sort2 ul").toggleClass("hidden");
     });
@@ -127,48 +195,8 @@ const callback = (data)  => {
         display(selectedMenu, sortName);
         
     });
-    //메뉴 클릭 이벤트
-    let lowerTxt;
-    $("#top .menulist ul li").on("click", function(){
-        //Menu name, title change
-        const txt = $(this).text();
-        lowerTxt = txt.toLowerCase();
-        $("#top .menulist p").text(txt);
-        $(".title").text(txt);
-
-        //itemlist change
-        $(".mainlist .items").empty();
-        if(lowerTxt == "all"){
-            selectedMenu = items.filter(item => true);
-            display(selectedMenu, "All");
-            textChange();
-        }else{
-            selectedMenu = items.filter(item => item.type == lowerTxt );
-            selectedMenu.map( item => subMenuList.push(item.sort) );
-            textChange();
-            display(selectedMenu, sortName);
-        }
-        
-
-        $(".sort1").removeClass("active");
-        
-    });
-    //서브메뉴 클릭 이벤트
-    $(".sort1 .submenu").on("click", function(e){
-        const name = e.target.dataset.sub;
-        if(name != undefined){
-            selectedMenu = items.filter(item => (item.sort == name) && (item.type == lowerTxt));
-            display( selectedMenu, sortName);
-            const elSpan = $(".sort1 .submenu span");
-            elSpan.attr("active", "0");
-            for(let i = 0; i < elSpan.length; i++){
-                if( elSpan.eq(i).attr("data-sub") == name ){
-                    elSpan.eq(i).attr("active", "1");
-                }
-            }
-        }
-        
-    });
+    
+    
 
     //more button
     const elLi = $(".itemlist .mainlist ul li");
@@ -184,11 +212,14 @@ const callback = (data)  => {
     
 
     //상세페이지 넘어가기
-    $(".mainlist .items li").on("click", function(e){
-        // e.preventDefault();
-        console.log( $(this).attr("data-id") );
-        localStorage.itemid = $(this).attr("data-id");
-    })
+    function clcikEvent(){
+        $(".mainlist .items li").on("click", function(){
+            // e.preventDefault();
+            console.log( $(this).attr("data-id") );
+            localStorage.itemid = $(this).attr("data-id");
+        });
+    }
+    
 
     
     
