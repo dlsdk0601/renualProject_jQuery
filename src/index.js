@@ -9,16 +9,47 @@ $(".regular").slick({
     autoplaySpeed: 4000
 });
     
+//스크롤 이벤트 
 $(window).on("scroll", function(){
-    const scr = $(".main2 .con-1").offset().top;
+    const con1 = $(".main2 .con-1").offset().top;
     const windowHeight = $(this).height()
     // console.log("콘텐츠:" + scr);
     // console.log("브라우저 높이값:" + $(this).height());
     // console.log("스크롤값:" + scrollY);
 
-    if((scr - windowHeight) < scrollY){
-        console.log("here");
-        $(".main2 .con-1 a").addClass("active");
+    if((con1 - windowHeight) < scrollY){
+        $(".main2 .con-1 .pho").addClass("active");
+        $(".main2 .con-1 > p").addClass("active");
+    }
+
+    const con2 = $(".main2 .con-2").offset().top;
+    if((con2 - windowHeight) < scrollY){
+        $(".main2 .con-2 figure").addClass("active");
+        $(".main2 .con-2 p").addClass("active");
+    }
+
+    const con3 = $(".main2 .con-3").offset().top;
+    if((con3 - windowHeight) < scrollY){
+        $(".main2 .con-3").addClass("active");
+    }
+
+    const con4 = $(".main2 .con-4").offset().top;
+    if((con4 - windowHeight) < scrollY){
+        $(".main2 .con-4 p").addClass("active");
+        $(".main2 .con-4 figure").addClass("active");
     }
 });
 
+//best event
+$(".best .bestitems li").on("mouseenter", function(){
+    $(this).css("animation", "best 1s forwards")
+});
+$(".best .bestitems li").on("mouseleave", function(){
+    $(this).css("animation", "ease")
+});
+//more button
+$(".best .morebtn").on("click", function(e){
+    // e.preventDefault();
+    localStorage.sort = "best";
+    localStorage.type = "all";
+});

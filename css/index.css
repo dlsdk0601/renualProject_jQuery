@@ -138,57 +138,49 @@
 
 .main2 .con-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: flex-start;
-    flex-direction: row-reverse;
     margin: 0 5%;
+    position: relative;
 }
-
-.main2 .con-1 > a {opacity: 0;}
-.main2 .con-1 > a.active{
+.main2 .con-1 > p{
+    position: absolute;
+    right: 0; top: 0;
+    opacity: 0;
+}
+.main2 .con-1 p.active{
     animation: a1 0.8s 0.5s forwards;
-}
+} 
 @keyframes a1 {
     0% {
-        transform: translate(0, 0);
-        opacity: 0.2;
-    }
-    30%{
-        transform: translate(0, 50px);
-        opacity: 0.3;
-    }
-    70%{
-        transform: translate(0, -10px);
-        opacity: 0.7;
+        opacity: 0;
+        top: 48%;
     }
     100% {
-        transform: translate(0, 0);
         opacity: 1;
+        top: 0;
     }
 }
 
-.main2 .con-1 figure {
+.main2 .con-1 .pho {
     width: 60%;
+    transform: translateX(-100%);
+}
+.main2 .con-1 figure.active {
+    animation: img1 0.8s 0.5s forwards;
 }
 
 .main2 .con-1 figure img {
     width: 85%;
-    animation: img1 0.8s 0.5s forwards;
-    opacity: 0;
+   
 }
 
 @keyframes img1 {
     0% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 0.3;
-    }
-    70% {
-        opacity: 0.7;
+        transform: translateX(-100%);
     }
     100% {
-        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -202,23 +194,25 @@
     margin: 15% 5% 0 5%;
 }
 
-.main2 .con-2 .text1 {
+.main2 .con-2 p {
     text-align: right;
     padding-right: 100px;
-    animation: a2 0.8s 0.5s forwards;
     opacity: 0;
+}
+.main2 .con-2 p.active {
+    animation: a2 2s forwards;
 }
 
 @keyframes a2 {
     0% {
         opacity: 0;
     }
-    30% {
+    /* 30% {
         opacity: 0.3;
     }
     70% {
         opacity: 0.7;
-    }
+    } */
     100% {
         opacity: 1;
     }
@@ -226,19 +220,17 @@
 
 .main2 .con-2 figure a img {
     width: 100%;
-    animation: img2 0.8s 0.5s forwards;
+}
+.main2 .con-2 figure{
     opacity: 0;
+}
+.main2 .con-2 figure.active{
+    animation: img2 2s forwards;
 }
 
 @keyframes img2 {
     0% {
         opacity: 0;
-    }
-    30% {
-        opacity: 0.3;
-    }
-    70% {
-        opacity: 0.7;
     }
     100% {
         opacity: 1;
@@ -250,52 +242,27 @@
 
 .main2 .con-3 {
     margin: 5% 5% 0 5%;
+    transform: translateX(-100%);
+    
 }
-
-.main2 .con-3 a {
-    animation: a3 0.8s 0.5s forwards;
-    opacity: 0;
+.main2 .con-3.active {
+    animation: a3 1.5s forwards;
 }
-
 @keyframes a3 {
     0% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 0.3;
-    }
-    70% {
-        opacity: 0.7;
+        transform: translateX(-100%);
     }
     100% {
-        opacity: 1;
+        transform: translateX(0);
     }
 }
-
 .main2 .con-3 figure {
     width: 55%;
 }
-
 .main2 .con-3 figure a img {
-    width: 100%;
-    animation: img3 0.8s 0.5s forwards;
-    opacity: 0;
+    width: 100%; height: 80vh;
 }
 
-@keyframes img3 {
-    0% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 0.3;
-    }
-    70% {
-        opacity: 0.7;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 
 /*이미지 4*/
@@ -310,12 +277,20 @@
 
 .main2 .con-4 figure {
     width: 40%;
+    opacity: 0;
+}
+.main2 .con-4 figure.active {
+    animation: a4 0.8s 0.5s forwards;
+}
+.main2 .con-4 p a {
+    padding: 0;
+}
+.main2 .con-4 p{
+    opacity: 0;
 }
 
-.main2 .con-4 a {
-    padding: 0;
+.main2 .con-4 p.active {
     animation: a4 0.8s 0.5s forwards;
-    opacity: 0;
 }
 
 @keyframes a4 {
@@ -378,13 +353,16 @@
 
 .best .bestitems li {
     width: 20%;
-    margin: 5% 0 5% 0;
+    margin: 0 0 5% 0;
+    padding-top: 5%;
 }
 
 .best .bestitems li:first-child {
     margin-left: 5%;
 }
-
+/* .best .bestitems li:first-child:hover {
+    animation: best 2s forwards infinite;
+} */
 .best .bestitems li:last-child {
     margin-right: 5%;
 }
@@ -410,6 +388,15 @@
     margin: 0 auto;
     text-align: center;
     border: 1px solid black;
+}
+@keyframes best{
+    /* 0%{transform: translateY(0);}
+    25%{transform: translateY(10%);}
+    50%{transform: translateY(0);}
+    75%{transform: translateY(10%);}
+    100%{transform: translateY(0);} */
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10%);}
 }
 
 
@@ -454,11 +441,11 @@
     font-size: 3rem;
     text-align: center;
     color: #383335;
-    animation: a1 2.5s forwards;
+    animation: a10 2.5s forwards;
     display: none;
 }
 
-@keyframes a1 {
+@keyframes a10{
     0% {
         opacity: 0;
     }
@@ -620,11 +607,11 @@
     font-size: 3rem;
     text-align: center;
     color: #383335;
-    animation: a3 2.5s forwards;
+    animation: a20 2.5s forwards;
     display: none;
 }
 
-@keyframes a3 {
+@keyframes a20 {
     0% {
         opacity: 0;
     }

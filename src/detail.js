@@ -129,8 +129,8 @@ function loadItem(data){
     //메뉴 클릭 이벤트
     let typeLower;
     $("#top .menulist ul li").on("click", function(){
-        typeLower = $(this).text();
-        localStorage.type =  typeLower.toLowerCase();
+        localStorage.type = $(this).text();
+        localStorage.sort = "ALL";
         location.href = "itemlist.html";
     });
 

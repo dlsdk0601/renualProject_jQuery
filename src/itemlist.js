@@ -35,23 +35,24 @@ const callback = (data)  => {
     let bestItems = new Array();
     let tagList = " ";
     let lowerTxt;
-    let upperTxt;
-    let sortName = "All";
+    let sortName = "ALL";
+    let localSort;
+
 
     function display(arr, sort){
-        if(sort == "All"){
+        if(sort == "ALL"){
             println(arr); 
-        }else if(sort == "Low price"){
+        }else if(sort == "LOW PRICE"){
             lowPriceItems = arr.slice();
             lowPriceItems.sort(lowSorting);
             println(lowPriceItems);
             lowPriceItems = [];
-        }else if(sort == "High price"){
+        }else if(sort == "HIGH PRICE"){
             highPriceItems = arr.slice();
             highPriceItems.sort(highSorting);
             println(highPriceItems);
             highPriceItems = [];
-        }else if(sort == "Best"){
+        }else if(sort == "BEST"){
             bestItems = arr.filter(item => item.popular == "best");
             println(bestItems);
             bestItems = [];
@@ -61,28 +62,32 @@ const callback = (data)  => {
     }
 
     
-    //상세페이지에서 넘어 왓을 경우
+    //다른페이지에서 넘어 왓을 경우
     if( localStorage.type != undefined){
-        lowerTxt = localStorage.type;
-        upperTxt = lowerTxt.toUpperCase();
+        localType = localStorage.type;
+        localSort = localStorage.sort;
+
         $(".mainlist .items").empty();
-        if(lowerTxt == "all"){
+        if(localType == "ALL"){
             selectedMenu = items.filter(item => true);
-            display(selectedMenu, "All");
-            textChange();
         }else{
-            selectedMenu = items.filter( item => item.type == lowerTxt );
+            selectedMenu = items.filter( item => item.type == localType.toLowerCase() );
             selectedMenu.map( item => subMenuList.push(item.sort) );
-            textChange();
-            display(selectedMenu, sortName);
-            $("#top .menulist p").text( upperTxt );
-            $(".title").text(upperTxt);
         }
+        $("#top .menulist p").text( localType );
+        $(".title").text(localType);
+        display(selectedMenu, localSort);
+        textChange();
+        $("#sort2 p").text(localSort);
+        sortName = localSort;
+        lowerTxt = localType.toLowerCase();
         localStorage.removeItem('type');
+        localStorage.removeItem('sort');
     }else{
         //default Page
-        display( items, "All" );
+        display( items, "ALL" );
     }
+    
     
 
     //create HTML Tag
@@ -111,9 +116,9 @@ const callback = (data)  => {
 
         //itemlist change
         $(".mainlist .items").empty();
-        if(lowerTxt == "all"){
+        if(txt == "ALL"){
             selectedMenu = items.filter(item => true);
-            display(selectedMenu, "All");
+            display(selectedMenu, "ALL");
             textChange();
         }else{
             selectedMenu = items.filter(item => item.type == lowerTxt );
@@ -191,7 +196,6 @@ const callback = (data)  => {
         $("#sort2 ul").addClass("hidden");
         sortName = $(this).text();
         $("#sort2 p").text(sortName);
-
         display(selectedMenu, sortName);
         
     });
