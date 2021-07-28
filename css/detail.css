@@ -3,7 +3,7 @@
 
 /*메뉴-------------------------------*/
 
-.sort1 {
+/* .sort1 {
     width: 80%;
     height: 50px;
     margin: 10% 10% 5% 10%;
@@ -62,14 +62,96 @@
     text-align: center;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
+} */
+
+.sort1 {
+    width: 80%;
+    height: 50px;
+    margin: 10% 10% 5% 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sort1 .menulist {
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.sort1 .menulist p{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sort1 .menulist ul{
+    position: absolute;
+    left: 0; top: 100%;
+    width: 100%; height: 100%;
+    background-color: white;
+    display: none;
+}
+.sort1 .menulist ul.active{
+    display: block;
+}
+.sort1 .menulist ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-left:1px solid black;
+    border-right:1px solid black;
+}
+.sort1 .menulist ul li:nth-of-type(1){
+    border-top: 1px solid black;
+}
+.sort1 .menulist ul li:nth-of-type(5){
+    border-bottom: 1px solid black;
 }
 
+.sort1 .downArrow{
+    display: block;
+    width: 30px; height: 100%;
+    padding: 0;
+    margin: 0;
+    border-right:1px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort1 .submenu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    padding-left: 1%;
+}
+.sort1 .submenu span{
+    cursor: pointer;
+    margin-left: 10%;
+}
+.sort1 .submenu span[active="1"]{
+    font-size: 1.5rem;
+}
+.title {
+    font-size: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
 
 /*상품 정보-----------------------------------------------*/
 
 .container {
     width: 100%;
-    display: flex;
+    display: flex; 
     justify-content: space-around;
     align-items: stretch;
 }
@@ -98,7 +180,7 @@
 
 .container .info p {
     width: 80%;
-    margin: 10% auto;
+    margin: 5% auto;
     text-align: center;
 }
 
@@ -106,13 +188,13 @@
 /*서브 이미지*/
 
 .container .info .ex {
-    width: 80%;
-    margin: 10% auto;
+    width: 80%; height: 100%;
+    margin: 20% auto;
     text-align: center;
 }
 
-.container .info .ex a img {
-    width: 100%;
+.container .info .ex img {
+    width: 100%; height: 100%;
 }
 
 
@@ -236,7 +318,7 @@
     left: 0;
 }
 
-.container .side:hover {
+.container .side.active {
     width: 30%;
     height: 90%;
     margin-top: 0;
@@ -250,10 +332,11 @@
 
 .container .side .mininame {
     height: 65.5px;
+    text-align: left;
 }
 
 .container .side .mininame>img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
 }
 
@@ -272,7 +355,7 @@
     border-top: 0px;
 }
 
-.container .side:hover>.mininame {
+.container .side p.mininame.hidden {
     display: none;
 }
 

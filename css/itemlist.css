@@ -8,12 +8,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden;
 }
-.sort1.active{
-    overflow: visible;
-}
-
 .sort1 .menulist {
     width: 15%;
     height: 100%;
@@ -31,6 +26,10 @@
     left: 0; top: 100%;
     width: 100%; height: 100%;
     background-color: white;
+    display: none;
+}
+.sort1 .menulist ul.active{
+    display: block;
 }
 .sort1 .menulist ul li {
     display: flex;
@@ -62,7 +61,7 @@
 
 .sort1 .submenu {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
     width: 15%;
     height: 100%;
@@ -70,6 +69,7 @@
 }
 .sort1 .submenu span{
     cursor: pointer;
+    margin-left: 10%;
 }
 .sort1 .submenu span[active="1"]{
     font-size: 1.5rem;
@@ -87,7 +87,6 @@
     width: 80%; height: 20%;
     margin: 1% auto;
     position: relative;
-    
     direction: rtl;
 }
 .sort2 p{
@@ -161,28 +160,35 @@
 }
 
 .mainlist > ul li {
-    width: 30%; height: 400px;
-    margin-bottom: 10%; 
+    width: 30%; height: 600px;
+    margin-bottom: 5%; 
+    cursor: pointer;
 }
 
-.mainlist ul li figure {
+.mainlist > ul li figure {
+    width: 100%; height: 80%;
+}
+.mainlist >ul li figure a{
+    display: block;
+    width: 100%; height: 100%;
+}
+.mainlist > ul li figure img {
     width: 100%; height: 100%;
 }
 
-.mainlist ul li figure img {
-    width: 100%; height: 100%;
-}
-
-.mainlist ul li figure p:nth-of-type(1) {
+.mainlist > ul li figure p:nth-of-type(1) {
     width: 100%;
     margin-top: 7%;
     text-align: center;
 }
-.mainlist ul li figure p:nth-of-type(2) {
+.mainlist > ul li figure p:nth-of-type(2) {
     width: 100%;
     margin-top: 2%;
     text-align: center;
 }
+/* .itemlist .mainlist ul li:nth-child(n+7) {
+    display: none;
+} */
 
 .more {
     width: 5%;
@@ -221,30 +227,88 @@
 /*mobile*/
 
 @media (max-width:767px) {
+
     .sort1 {
-        width: 80%;
-        height: 40%;
-        margin: 20% 10% 10% 10%;
+        width: 40%;
+        height: 40px;
+        margin: 15% auto;
         border: 0px solid black;
         display: block;
+        justify-content: center;
+        align-items:  center;
+        position: relative;
     }
+    
     .sort1 .menulist {
-        width: 50%;
-        height: 400%;
+        width: 90%;
+        height: 25px;
         display: block;
-        position: static;
+        position: relative;
         margin: 0 auto;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         padding: 0;
     }
-    .sort1 span {
+    .sort1 .menulist p{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+    .sort1 .menulist ul{
+        position: absolute;
+        left: -0; top: 95%;
+        width: 100%; height: 100%;
+        background-color: white;
+        display: none;
+    }
+    .sort1 .menulist ul.active{
+        display: block;
+    }
+    .sort1 .menulist ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        background-color: white;
+        border-left:1px solid black;
+        border-right:1px solid black;
+    }
+    .sort1 .menulist ul li:nth-of-type(1){
+        border-top: 1px solid black;
+    }
+    .sort1 .menulist ul li:nth-of-type(5){
+        border-bottom: 1px solid black;
+    }
+    .sort1 .downArrow{
+        position: absolute;
+        right: 5%; top: 0;
+        display: block;
+        width: 28px; height: 28px;
+        padding: 0; margin: 0;
+        border-right:0px solid black ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sort1 .submenu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 100%;
+        height: 100%;
         padding-left: 0;
-        margin: 5% auto;
-        border-left: 0px solid black;
+        margin: 10% auto;
+    }
+    .sort1 .submenu span{
+        cursor: pointer;
+        margin-left: 0;
+    
+    }
+    .sort1 .submenu span[active="1"]{
+        font-size: 1.5rem;
     }
     .title {
         font-size: 2rem;
@@ -253,35 +317,65 @@
         text-align: center;
         border-bottom: 0px solid black;
         border-top: 1px solid black;
-        padding-bottom: 30px;
+        padding: 10px 0;
     }
     .sort2 {
-        width: 80%;
+        width: 80%; height: 10%;
         margin: 1% auto;
         text-align: center;
     }
-    .sort2 select {
-        width: 40%;
+    .sort2 p{
+        width: 20%; 
+        text-align: center;
+        border: 1px solid black;
+        font-size: 0.5rem;
     }
-    .itemlist .mainlist nav a {
-        width: 25px;
-        height: 25px;
+    .sort2 img{
+        display: block;
+        position: absolute;
+        right: 0; top: 0;
+        cursor: pointer;
+        width: 20px; height: 18px;
+    }
+    .sort2 ul{
+        width: 20%; 
+        position: absolute;
+        right: 0; top: 100%;
+        background-color: white;
         border: 1px solid black;
     }
-    .itemlist ul {
+    .sort2 ul.hidden{
+        display: none;
+    }
+    .sort2 ul li{
+        width: 100%; height: 100%;
+        text-align: center;
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5rem;
+        padding: 5px 0;
+    }
+
+    .itemlist .mainlist nav a {
+        display: none;
+        
+    }
+    .itemlist .items {
         width: 80%;
         margin: 0 auto;
         padding-top: 40px;
-        display: flex;
+        display: block;
         flex-flow: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    .itemlist ul li {
+    .itemlist .items li {
         width: 100%;
-        margin-bottom: 5%;
+        margin-bottom: 50%;
     }
-    .itemlist ul li:nth-child(n+5) {
+    .itemlist .items li:nth-child(n+5) {
         display: none;
     }
     .itemlist ul li figure {
@@ -328,7 +422,7 @@
 
 /*mobile and tablet*/
 
-@media (min-width:768px) and (max-width:990px) {
+@media (min-width:768px) and (max-width:1025px) {
     .sort1 {
         width: 80%;
         height: 50px;
@@ -342,16 +436,54 @@
         width: 20%;
         height: 100%;
         border: 0px;
-        padding: 10px;
+        /* padding: 10px; */
     }
-    .sort1 span {
+    .sort1 .menulist p{
+        width: 100%; height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        width: 25%;
+    }
+    .sort1 .menulist ul{
+        position: absolute;
+        left: 0; bottom: -100%;
+        width: 100%; height: 100%;
+        background-color: white;
+        display: none;
+    }
+    .sort1 .menulist ul.active{
+        display: block;
+    }
+    .sort1 .menulist ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         height: 100%;
-        padding-left: 20px;
-        border-left: 1px solid black;
+        background-color: white;
+        border-left:1px solid black;
+        border-right:1px solid black;
+    }
+    .sort1 .menulist ul li:nth-of-type(1){
+        border-top: 1px solid black;
+    }
+    .sort1 .menulist ul li:nth-of-type(5){
+        border-bottom: 1px solid black;
+    }
+    .sort1 .submenu {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+        padding-left: 1%;
+    }
+    .sort1 .submenu span{
+        cursor: pointer;
+        margin-left: 5%;
+    }
+    .sort1 .submenu span[active="1"]{
+        font-size: 1.5rem;
     }
     .title {
         font-size: 3rem;
@@ -364,44 +496,74 @@
     .sort2 {
         width: 80%;
         margin: 1% auto;
-        text-align: right;
+        position: relative;
+
+        direction: rtl;
     }
-    .sort2 select {
-        width: 10%;
+    .sort2 p {
+        width: 8%; 
+        text-align: left;
+        padding-left: 2%;
+        border: 1px solid black;
+        font-size: 0.5rem;
     }
-    .itemlist ul {
+    .sort2 img{
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 0; top: 0;
+        cursor: pointer;
+    }
+    .sort2 ul{
+        width: 8%; 
+        position: absolute;
+        right: 0; top: 100%;
+        background-color: white;
+        border: 1px solid black;
+        display: block;
+    }
+    .sort2 ul.hidden{
+        display: none;
+    }
+    .sort2 ul li{
+        width: 100%; height: 100%;
+        text-align: center;
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5rem;
+    }
+    .itemlist .mainlist ul {
         width: 80%;
         margin: 0 auto;
         padding-top: 40px;
-    }
-    .itemlist ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .itemlist ul li {
+    .itemlist .mainlist ul li {
         width: 40%;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
-    .itemlist ul li:nth-child(n+7) {
+    .mainlist ul li figure {
+        width: 100%; height: 100%;
+    }
+    .mainlist ul li figure a{
+        display: block;
+        width: 100%; height: 100%;
+    }
+    .mainlist ul li figure img {
+        width: 100%; height: 100%;
+    }
+
+    .itemlist .mainlist ul li:nth-child(n+7) {
         display: none;
     }
-    .itemlist ul li figure {
-        width: 100%;
-    }
-    .itemlist ul li figure img {
-        width: 100%;
-    }
-    .itemlist ul li figure p {
+    .itemlist .mainlist ul li figure p {
         width: 100%;
         margin-top: 7%;
         text-align: center;
-    }
-    .more {
-        width: 10%;
-        border: 2px solid black;
-        text-align: center;
-        margin: 5% auto;
     }
     .mobileBottomBtn {
         width: 100%;

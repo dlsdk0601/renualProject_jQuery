@@ -8,7 +8,10 @@ const callback = (data)  => {
     //mainMenu css event
     $("#top .downArrow").on("click", function(e){
         e.preventDefault();
-        $(".sort1").toggleClass("active");
+        $(".sort1 .menulist ul").toggleClass("active");
+    });
+    $("#top .menulist ul li").on("click", function(){
+        $(".sort1 .menulist ul").toggleClass("active");
     });
     $("#top .menulist ul li").on("mouseenter", function(){
         $(this).css("background-color", "gray");
@@ -47,18 +50,15 @@ const callback = (data)  => {
             println(bestItems);
             bestItems = [];
         }
-        
         itemList = "";
     }
     
     //create HTML Tag
     function createHTMLString(item){
-        return `<li>
+        return `<li data-id="${item.id}">
                     <figure>
-                        <a href=""><img src="${item.thum}" alt=""></a>
-                        <a href="detail.html">
-                            <p>${item.name}</p><p>${item.price}￦</p>
-                        </a>
+                        <a data-id="${item.id}" href="detail.html"><img src="${item.thum}" alt=""></a>
+                        <a data-id="${item.id}" href="detail.html"><p>${item.name}</p><p>${item.price}￦</p></a>
                     </figure>
                 </li>`;
     }
@@ -169,14 +169,31 @@ const callback = (data)  => {
         }
         
     });
+
+    //more button
+    const elLi = $(".itemlist .mainlist ul li");
+    for(let i = 9; i < 100; i++){
+        elLi.eq(i).hide();
+    }
+    $(".more").on("click", function(e){
+        e.preventDefault();
+        $(".itemlist .mainlist ul li").show();
+        $(this).remove();
+    })
+    
     
 
     //상세페이지 넘어가기
-    $(".mainlist .items li figure a").on("click", function(e){
-        // localStorage.itemid = 
-        e.preventDefault();
-
+    $(".mainlist .items li").on("click", function(e){
+        // e.preventDefault();
+        console.log( $(this).attr("data-id") );
+        localStorage.itemid = $(this).attr("data-id");
     })
+
+    
+    
+    
+
 
 
     //end
