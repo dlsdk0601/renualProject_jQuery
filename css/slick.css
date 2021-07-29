@@ -130,7 +130,9 @@
     font-size: 0;
     border: 0; background: none;
 }
-.slick-prev{left: 5%;}
+.slick-prev{
+    left: 5%;
+}
 .slick-prev::before{
     content: "";
     display: block;
