@@ -15,7 +15,12 @@ $("header").load("inc.html header > div", function(){
     $("#bigMenu .menu").on("click", function(){
         $("#bigMenu .menu section").removeClass("active");
         $("#bigMenu .menu section").eq( $(this).index() ).addClass("active");
-        
+        localStorage.type = $(this).find(".active-1").text();
+    });
+    //small menu click
+    $("#bigMenu .menu section p").on("click", function(){
+        localStorage.smallMenu = $(this).text();
+        localStorage.sort = "ALL";
     });
         
     //login popup

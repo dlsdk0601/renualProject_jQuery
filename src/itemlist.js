@@ -37,7 +37,7 @@ const callback = (data)  => {
     let lowerTxt;
     let sortName = "ALL";
     let localSort;
-
+    let elSpan;
 
     function display(arr, sort){
         if(sort == "ALL"){
@@ -63,17 +63,26 @@ const callback = (data)  => {
 
     
     //다른페이지에서 넘어 왓을 경우
+    localType = localStorage.type;
+    localSort = localStorage.sort;
     if( localStorage.type != undefined){
-        localType = localStorage.type;
-        localSort = localStorage.sort;
-
         $(".mainlist .items").empty();
         if(localType == "ALL"){
             selectedMenu = items.filter(item => true);
         }else{
-            selectedMenu = items.filter( item => item.type == localType.toLowerCase() );
-            selectedMenu.map( item => subMenuList.push(item.sort) );
+            if( localStorage.smallMenu != undefined ){
+                selectedMenu = items.filter(item => (item.sort == localStorage.smallMenu.toLowerCase()) && (item.type == localType.toLowerCase()));
+                items.map( item => {
+                    if( item.type == localType.toLowerCase()) {
+                        subMenuList.push(item.sort)
+                    }
+                });
+            }else{
+                selectedMenu = items.filter( item => item.type == localType.toLowerCase() );
+                selectedMenu.map( item => subMenuList.push(item.sort) );
+            }
         }
+        
         $("#top .menulist p").text( localType );
         $(".title").text(localType);
         display(selectedMenu, localSort);
@@ -83,6 +92,7 @@ const callback = (data)  => {
         lowerTxt = localType.toLowerCase();
         localStorage.removeItem('type');
         localStorage.removeItem('sort');
+        localStorage.removeItem('smallMenu');
     }else{
         //default Page
         display( items, "ALL" );
@@ -118,7 +128,7 @@ const callback = (data)  => {
         $(".mainlist .items").empty();
         if(txt == "ALL"){
             selectedMenu = items.filter(item => true);
-            display(selectedMenu, "ALL");
+            display(selectedMenu, sortName);
             textChange();
         }else{
             selectedMenu = items.filter(item => item.type == lowerTxt );
@@ -138,7 +148,7 @@ const callback = (data)  => {
         if(name != undefined){
             selectedMenu = items.filter(item => (item.sort == name) && (item.type == lowerTxt));
             display( selectedMenu, sortName);
-            const elSpan = $(".sort1 .submenu span");
+            elSpan = $(".sort1 .submenu span");
             elSpan.attr("active", "0");
             for(let i = 0; i < elSpan.length; i++){
                 if( elSpan.eq(i).attr("data-sub") == name ){
@@ -146,7 +156,6 @@ const callback = (data)  => {
                 }
             }
         }
-        
     });
     
     //submenu change function
@@ -199,8 +208,6 @@ const callback = (data)  => {
         display(selectedMenu, sortName);
         
     });
-    
-    
 
     //more button
     const elLi = $(".itemlist .mainlist ul li");

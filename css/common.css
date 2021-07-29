@@ -66,24 +66,22 @@ a {
     display: block;
     width: 40px;
     height: 21px;
-} */
-/* header .trigger span {
+}
+header .trigger span {
     width: 40px;
     height: 3px;
     font-size: 0;
     position: absolute;
     border-radius: 3px;
     background: black;
-} */
-/* header .trigger span:nth-child(1) {
+}
+header .trigger span:nth-child(1) {
     top: 0;
 }
-
 header .trigger span:nth-child(2) {
     top: 50%;
     transform: translate(0, -50%);
 }
-
 header .trigger span:nth-child(3) {
     bottom: 0;
 } */
@@ -176,12 +174,46 @@ footer .bt-2 {
 }
 .pop .menuname div section p{
     margin-bottom: 10%;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .pop .menuname div section.active{
     display: block;
     z-index: 3;
+}
+.pop .menuname div .active-1{
+    position: relative;
+}
+.pop .menuname div .active-1::after{
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0; height: 2px;
+    margin: 5px 0 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #333;
+}
+.pop .menuname div:hover .active-1::after{
+    width: 100%; opacity: 1;
+}
+.pop .menuname div section p .active-2{
+    position: relative;
+}
+.pop .menuname div section p .active-2::after{
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0; height: 2px;
+    margin: 5px 0 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #333;
+}
+.pop .menuname div .active-2:hover::after{
+    width: 100%; opacity: 1;
 }
 
 

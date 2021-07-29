@@ -47,9 +47,31 @@ $(".best .bestitems li").on("mouseenter", function(){
 $(".best .bestitems li").on("mouseleave", function(){
     $(this).css("animation", "ease")
 });
+
 //more button
 $(".best .morebtn").on("click", function(e){
     // e.preventDefault();
     localStorage.sort = "BEST";
     localStorage.type = "ALL";
+});
+
+$(".main2 .con-1 a").on("click", function(e){
+    // e.preventDefault();
+    localStorage.sort = "ALL";
+    localStorage.type = "DIY";
+});
+$(".main2 .con-2 a").on("click", function(e){
+    // e.preventDefault();
+    localStorage.sort = "ALL";
+    localStorage.type = "WOOD";
+});
+$(".main2 .con-3 a").on("click", function(e){
+    // e.preventDefault();
+    localStorage.sort = "ALL";
+    localStorage.type = "METAL";
+});
+$(".main2 .con-4 a").on("click", function(e){
+    // e.preventDefault();
+    localStorage.sort = "ALL";
+    localStorage.type = "DECO";
 });
