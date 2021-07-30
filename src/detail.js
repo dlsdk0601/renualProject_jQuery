@@ -63,7 +63,7 @@ function loadItem(data){
                         <p class="name"> ${selectedItem[0].name}</p>
                         <div class="price">
                             <p>Price</p>
-                            <p>${selectedItem[0].price}￦</p>
+                            <p>${selectedItem[0].price.toLocaleString("ko-KR")}￦</p>
                         </div>
                         <div class="material">
                             <p>material</p>

@@ -105,7 +105,7 @@ const callback = (data)  => {
         return `<li data-id="${item.id}">
                     <figure>
                         <a data-id="${item.id}" href="detail.html"><img src="${item.thum}" alt=""></a>
-                        <a data-id="${item.id}" href="detail.html"><p>${item.name}</p><p>${item.price}￦</p></a>
+                        <a data-id="${item.id}" href="detail.html"><p>${item.name}</p><p>${item.price.toLocaleString("ko-KR")}￦</p></a>
                     </figure>
                 </li>`;
     }
@@ -230,7 +230,17 @@ const callback = (data)  => {
             localStorage.itemid = $(this).attr("data-id");
         });
     }
+
+
+    $(window).on("scroll", function(){
+        if(scrollY > 120){
+            $(".sort1").css( { "position": "sticky", "top": "6%", "z-index": "4", "background": "white" } );
+        }else{
+            $(".sort1").css( { "position": "static", "top": "0", "z-index": "1", "background": "none" } );
+        }
+    });
     
+
 
     
     
