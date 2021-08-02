@@ -1,0 +1,25 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "MiniDeco",
+  "short_name": "MiniDeco",
+  "scope": "/renualProject_jQuery/",
+  "display": "standalone",
+  "start_url": "/renualProject_jQuery/",
+  "background_color": "transparent",
+  "theme_color": "transparent",
+  "description": "DIY and Wood Furniture",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://dlsdk0601.github.io/renualProject_jQuery/img/thumnail1.ico",
+      "sizes": "16x16"
+    },
+    {
+      "src": "https://dlsdk0601.github.io/renualProject_jQuery/img/thumnail1.ico",
+      "sizes": "114*114",
+      "type": "image/vnd.microsoft.icon"
+    }
+  ]
+}
