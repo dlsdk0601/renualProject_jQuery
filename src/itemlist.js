@@ -236,7 +236,7 @@ const callback = (data)  => {
         if(scrollY > 120){
             $(".sort1").css( { "position": "sticky", "top": "6%", "z-index": "4", "background": "white" } );
         }else{
-            $(".sort1").css( { "position": "static", "top": "0", "z-index": "1", "background": "none" } );
+            $(".sort1").css( { "position": "relative", "top": "0", "z-index": "1", "background": "none" } );
         }
     });
     

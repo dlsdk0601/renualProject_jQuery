@@ -233,8 +233,8 @@
 @media (max-width:767px) {
 
     .sort1 {
-        width: 40%;
-        height: 40px;
+        width: 80%;
+        height: 25px;
         margin: 15% auto;
         border: 0px solid black;
         display: block;
@@ -244,7 +244,8 @@
     }
     
     .sort1 .menulist {
-        width: 90%;
+        width: 60%;
+        margin: 0 auto;
         height: 25px;
         display: block;
         position: relative;
@@ -288,7 +289,7 @@
     }
     .sort1 .downArrow{
         position: absolute;
-        right: 5%; top: 0;
+        right: 20%; top: 0%;
         display: block;
         width: 28px; height: 28px;
         padding: 0; margin: 0;
@@ -301,10 +302,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 60%;
         height: 100%;
         padding-left: 0;
-        margin: 10% auto;
+        margin: 2% auto;
+        /* background-color: white; */
     }
     .sort1 .submenu span{
         cursor: pointer;
@@ -377,7 +379,7 @@
     }
     .itemlist .items li {
         width: 100%;
-        margin-bottom: 50%;
+        margin-bottom: 10%;
     }
     .itemlist .items li:nth-child(n+5) {
         display: none;
@@ -387,6 +389,9 @@
     }
     .itemlist ul li figure img {
         width: 100%;
+    }
+    .itemlist ul li a:nth-of-type(2){
+        height: 30px;
     }
     .itemlist ul li figure p {
         width: 100%;

@@ -575,6 +575,7 @@ footer .bt-2 {
         height: 100vh;
         border-right: 1px solid black;
         font-size: 2rem;
+        margin-top: 10%;
     }
     .pop .menuname div {
         text-align: center;
@@ -743,7 +744,7 @@ footer .bt-2 {
             transform : translateY(-20px) rotate(0);
         }
         100% {
-            transform : translateY(-3px) rotate(-45deg);
+            transform : translateY(-8px) rotate(-45deg);
         }
     }
 

@@ -205,12 +205,6 @@
     0% {
         opacity: 0;
     }
-    /* 30% {
-        opacity: 0.3;
-    }
-    70% {
-        opacity: 0.7;
-    } */
     100% {
         opacity: 1;
     }
@@ -733,7 +727,7 @@
         position: relative;
         height: 250px;
     }
-    .main1 .btn {
+    /* .main1 .btn {
         width: 90%;
         height: 50px;
         position: absolute;
@@ -746,8 +740,8 @@
     }
     .main1 .btn .left::before {
         content: '';
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-top: 2px solid black;
         border-left: 2px solid black;
         display: inline-block;
@@ -755,8 +749,8 @@
     }
     .main1 .btn .right::before {
         content: '';
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-top: 2px solid black;
         border-right: 2px solid black;
         display: inline-block;
@@ -780,7 +774,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
+    } */
+    
     .main1 .slide figure {
         width: 100%;
         height: 250px;
@@ -796,7 +791,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        font-size: 2rem;
+        font-size: 1rem;
         color: #383335;
         z-index: 2;
         opacity: 1;
@@ -806,7 +801,7 @@
         opacity: 0;
     }
     
-    @keyframes text1 {
+    /* @keyframes text1 {
         0% {
             top: 52%;
             opacity: 0;
@@ -827,7 +822,7 @@
             opacity: 1;
         }
         
-    }
+    } */
 
     /*main2-----------------------------------------------*/
     .main2 {
@@ -849,18 +844,30 @@
         flex-direction: column-reverse;
         margin: 0 5%;
     }
+    .main2 .con-1 > p{
+        position: static;
+        opacity: 1;
+        text-align: center;
+    }
+    .main2 .con-1 p.active{
+        animation: ease;
+    }
     .main2 .con-1 a {
         animation: ease;
         opacity: 1;
+        transform: translateX(0%);
     }
-    .main2 .con-1 figure {
+    .main2 .con-1 .pho {
         width: 100%;
         height: 200px;
     }
-    .main2 .con-1 figure img {
+    .main2 .con-1 figure.active {
+        transform: translateX(0);
+        animation: ease;
+    }
+    .main2 .con-1 .pho img {
         width: 100%;
         height: 100%;
-        animation: ease;
         opacity: 1;
     }
     /*이미지2*/
@@ -877,10 +884,18 @@
         animation: ease;
         opacity: 1;
     }
+    .main2 .con-2 p.active {
+        animation: ease;
+    }
     .main2 .con-2 figure {
         width: 100%;
         height: 200px;
+        opacity: 1;
     }
+    .main2 .con-2 figure.active {
+        animation: ease;
+    }
+
     .main2 .con-2 figure a img {
         width: 100%;
         height: 200px;
@@ -893,6 +908,10 @@
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
+        transform: translateX(0%);
+    }
+    .main2 .con-3.active {
+        animation: ease;
     }
     .main2 .con-3 figure {
         width: 100%;
@@ -919,11 +938,18 @@
     .main2 .con-4 figure {
         width: 100%;
         height: 200px;
+        opacity: 1;
     }
-    .main2 .con-4 a {
+    .main2 .con-4 figure.active {
+        animation: ease;
+    }
+    .main2 .con-4 p {
         padding: 0;
         animation: ease;
         opacity: 1;
+    }
+    .main2 .con-4 p.active {
+        animation: ease;
     }
     .main2 .con-4 figure a img {
         width: 100%;
@@ -1289,6 +1315,18 @@
         color: #bbb5b1;
         font-family: Oswald;
     }
+    .main1 .maintxt {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 2rem;
+        color: #383335;
+        z-index: 2;
+        opacity: 1;
+    }
     /*이미지1*/
     .main2 .con-1 {
         width: 45%;
@@ -1298,20 +1336,34 @@
         flex-direction: column-reverse;
         margin: 0 0 10% 0;
     }
-    .main2 .con-1 figure img {
+    .main2 .con-1 .pho {
         width: 100%;
         height: 350px;
-        animation: ease;
+        transform: translateX(0%);
+    }
+    .main2 .con-1 .pho img {
+        width: 100%;
+        height: 350px;
         opacity: 1;
     }
-    .main2 .con-1 figure {
-        width: 100%;
-        height: 350px;
+    .main2 .con-1 .pho.active {
+        animation: ease;
     }
+
+    .main2 .con-1 > p{
+        position: static;
+        opacity: 1;
+        text-align: center;
+    }
+    .main2 .con-1 p.active{
+        animation: ease;
+    } 
     .main2 .con-1 a {
         animation: ease;
         opacity: 1;
     }
+
+
     /*이미지2*/
     .main2 .con-2 {
         width: 45%;
@@ -1324,19 +1376,26 @@
     .main2 .con-2 .text1 {
         text-align: center;
         padding: 0;
-        animation: ease;
         opacity: 1;
+    }
+    .main2 .con-2 .text1.active {
+        animation: ease;
     }
     .main2 .con-2 figure {
         width: 100%;
         height: 350px;
+        opacity: 1;
+    }
+    .main2 .con-2 figure.active {
+        animation: ease;
     }
     .main2 .con-2 figure a img {
         width: 100%;
         height: 350px;
         animation: ease;
-        opacity: 1;
+        
     }
+
     /*이미지3*/
     .main2 .con-3 {
         width: 45%;
@@ -1345,10 +1404,17 @@
         align-items: center;
         flex-direction: column-reverse;
         margin: 0;
+        transform: translateX(0%);
+    }
+    .main2 .con-3.active {
+        animation: ease;
     }
     .main2 .con-3 figure {
         width: 100%;
         height: 350px;
+    }
+    .main2 .con-3 p{
+        text-align: center;
     }
     .main2 .con-3 figure a img {
         width: 100%;
@@ -1356,10 +1422,8 @@
         animation: ease;
         opacity: 1;
     }
-    .main2 .con-3 a {
-        animation: ease;
-        opacity: 1;
-    }
+
+
     /*이미지 4*/
     .main2 .con-4 {
         width: 45%;
@@ -1372,17 +1436,28 @@
     .main2 .con-4 figure {
         width: 100%;
         height: 350px;
+        opacity: 1;
+    }
+    .main2 .con-4 figure.active{
+        animation: ease;
     }
     .main2 .con-4 figure a img {
         width: 100%;
         height: 350px;
+        opacity: 1;
+    }
+    .main2 .con-4 p {
+        opacity: 1;
+    }
+    .main2 .con-4 p.active{
+        animation: ease;
+    }
+    .main2 .con-4 figure a img {
+        width: 100%;
         animation: ease;
         opacity: 1;
     }
-    .main2 .con-4 a {
-        animation: ease;
-        opacity: 1;
-    }
+    
     /*Best--------------------------*/
     .best {
         margin: 10% 5% 0 5%;

@@ -188,7 +188,8 @@
 /*서브 이미지*/
 
 .container .info .ex {
-    width: 80%; height: 100%;
+    width: 80%; 
+    height: 100%;
     margin: 20% auto;
     text-align: center;
 }
@@ -586,12 +587,13 @@
         align-items: stretch;
     }
     .container .info {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         flex-grow: 1;
     }
     /*메인 이미지*/
-    .container .info .bigphto {
-        width: 80%;
+    .container .info .explain {
+        width: 100%;
         margin: 10% auto;
         text-align: center;
     }
@@ -606,19 +608,12 @@
         font-size: 0.5rem;
     }
     /*서브 이미지*/
-    .container .info .subphoto {
+    .container .info .ex {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-flow: wrap;
-    }
-    .container .info .subphoto .ex {
-        width: 40%;
-        margin: 05%auto;
+        margin: 5% auto;
         text-align: center;
     }
-    .container .info .subphoto .ex a img {
+    .container .info .ex img {
         width: 100%;
     }
     /*qna 게시판*/
@@ -873,12 +868,13 @@
         flex-grow: 1;
     }
     /*메인 이미지*/
-    .container .info .bigphto {
-        width: 80%;
-        margin: 10% auto;
+    .container .info{
+        width: 95%;
+        margin-left: 5%;
+        /* margin: 10% auto; */
         text-align: center;
     }
-    .container .info .bigphto img {
+    .container .info img {
         width: 100%;
     }
     /*상품 설명*/
@@ -888,19 +884,23 @@
         text-align: center;
     }
     /*서브 이미지*/
-    .container .info .subphoto {
+    .container .info .explain{
         width: 100%;
+        margin-left: 5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-flow: wrap;
     }
-    .container .info .subphoto .ex {
-        width: 20%;
+    .container .info .explain {
+        width: 90%;
         margin-bottom: 5%;
         text-align: center;
     }
-    .container .info .subphoto .ex a img {
+    .container .info .ex{
+        width: 100%;
+    }
+    .container .info .explain a img {
         width: 100%;
     }
     /*qna 게시판*/
