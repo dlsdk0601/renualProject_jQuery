@@ -87,6 +87,13 @@ const callback = (data)  => {
         $(".title").text(localType);
         display(selectedMenu, localSort);
         textChange();
+        elSpan = $(".sort1 .submenu span");
+            elSpan.attr("active", "0");
+            for(let i = 0; i < elSpan.length; i++){
+                if( elSpan.eq(i).attr("data-sub") == localStorage.smallMenu.toLowerCase() ){
+                    elSpan.eq(i).attr("active", "1");
+                }
+            }
         $("#sort2 p").text(localSort);
         sortName = localSort;
         lowerTxt = localType.toLowerCase();
@@ -147,7 +154,7 @@ const callback = (data)  => {
         const name = e.target.dataset.sub;
         if(name != undefined){
             selectedMenu = items.filter(item => (item.sort == name) && (item.type == lowerTxt));
-            display( selectedMenu, sortName);
+            display( selectedMenu, sortName );
             elSpan = $(".sort1 .submenu span");
             elSpan.attr("active", "0");
             for(let i = 0; i < elSpan.length; i++){

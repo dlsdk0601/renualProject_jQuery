@@ -190,9 +190,9 @@
     margin-top: 2%;
     text-align: center;
 }
-/* .itemlist .mainlist ul li:nth-child(n+7) {
+.itemlist .mainlist ul li:nth-child(n+7) {
     display: none;
-} */
+}
 
 .more {
     width: 5%;
