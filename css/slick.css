@@ -46,6 +46,7 @@
         -ms-transform: translate3d(0, 0, 0);
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+            height: 100%;
 }
 
 .slick-track
@@ -190,7 +191,22 @@
     width: 100%; height: 100%;
 }
 
+
+
+
+
 @media (max-width:767px) {
+    .main1{
+        width: 100%;
+        height: 50vh;
+    }
+    .main1 .slide{
+        width: 100%;
+        height: 100%;
+    }
+    .main1 .slide figure section img {
+        width: 100%; height: 100%;
+    }
     .slick-arrow{
         position: absolute;
         top: 50%; 
@@ -225,7 +241,7 @@
     /* 인디게이터 ul li button */
     .slick-dots{
         position: absolute;
-        left: 50%; bottom: 20%;
+        left: 50%; bottom: 1%;
         transform: translateX(-50%);
         z-index: 2;
         list-style: none; margin: 0;
@@ -261,14 +277,23 @@
 }
 
 @media (min-width:768px) and (max-width:1095px) {
-    /* 좌우 버튼 */
     .main1{
         width: 100%;
         height: 50vh;
     }
+    .slick-slider .slick-track,
+    .slick-slider .slick-list
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                height: 100%;
+    }
     .main1 .slide{
         width: 100%;
-        /* height: 50vh; */
+        height: 100%;
     }
     .main1 .slide figure section img {
         width: 100%; height: 100%;
@@ -306,7 +331,7 @@
     /* 인디게이터 ul li button */
     .slick-dots{
         position: absolute;
-        left: 50%; bottom: 18%;
+        left: 50%; bottom: 1%;
         transform: translateX(-50%);
         z-index: 2;
         list-style: none; margin: 0;

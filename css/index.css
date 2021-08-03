@@ -62,7 +62,7 @@
 
 .main1 .slide{
     width: 100%;
-    height: 100%;
+    height: 95vh;
     overflow: hidden;
 }
 .main1 .slide figure {
@@ -78,7 +78,7 @@
 .main1 .slide figure section img {
     width: 100%; height: 100%;
 }
-.main1 p {
+.main1 .maintxt {
     width: 50%;
     position: absolute;
     left: 50%; top: 50%;

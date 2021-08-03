@@ -62,30 +62,6 @@ a {
     height: 21px;
     position: relative;
 }
-/* header .trigger a{
-    cursor: pointer;
-    display: block;
-    width: 40px;
-    height: 21px;
-}
-header .trigger span {
-    width: 40px;
-    height: 3px;
-    font-size: 0;
-    position: absolute;
-    border-radius: 3px;
-    background: black;
-}
-header .trigger span:nth-child(1) {
-    top: 0;
-}
-header .trigger span:nth-child(2) {
-    top: 50%;
-    transform: translate(0, -50%);
-}
-header .trigger span:nth-child(3) {
-    bottom: 0;
-} */
 
 .head .topicons {
     width: 20%;
@@ -225,8 +201,6 @@ footer .bt-2 {
     box-sizing: border-box;
 }
 .menu-trigger {
-    /* position: fixed;
-    right: 20px; bottom: 20px; */
     z-index: 2;
     width: 50px;
     height: 44px;
@@ -244,7 +218,6 @@ footer .bt-2 {
     top: 0;
 }
 .menu-trigger span:nth-of-type(2) {
-    /* top: 20px; */
     top: 50%;
     transform: translate(0, -50%);
     
@@ -477,29 +450,6 @@ footer .bt-2 {
         padding: 0 5%;
         z-index: 10;
     }
-    /* header .trigger {
-        width: 20%;
-        height: 15px;
-        position: relative;
-    }
-    header .trigger span {
-        width: 30px;
-        height: 3px;
-        font-size: 0;
-        position: absolute;
-        border-radius: 3px;
-        background: black;
-    }
-    header .trigger span:nth-child(1) {
-        top: 0;
-    }
-    header .trigger span:nth-child(2) {
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-    header .trigger span:nth-child(3) {
-        bottom: 0;
-    } */
     header .topicons {
         width: 20%;
         height: 80%;
@@ -609,8 +559,6 @@ footer .bt-2 {
         box-sizing: border-box;
     }
     .menu-trigger {
-        /* position: fixed;
-        right: 20px; bottom: 20px; */
         z-index: 2;
         width: 50px;
         height: 40px;
@@ -628,7 +576,6 @@ footer .bt-2 {
         top: 0;
     }
     .menu-trigger span:nth-of-type(2) {
-        /* top: 20px; */
         top: 50%;
         transform: translate(0, -50%);
         
@@ -768,29 +715,7 @@ footer .bt-2 {
         padding: 0 5%;
         z-index: 3;
     }
-    /* header .trigger {
-        width: 20%;
-        height: 25px;
-        position: relative;
-    }
-    header .trigger span {
-        width: 40px;
-        height: 3px;
-        font-size: 0;
-        position: absolute;
-        border-radius: 3px;
-        background: black;
-    }
-    header .trigger span:nth-child(1) {
-        top: 0;
-    }
-    header .trigger span:nth-child(2) {
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-    header .trigger span:nth-child(3) {
-        bottom: 0;
-    } */
+
     header .topicons {
         width: 20%;
         height: 80%;
@@ -862,8 +787,7 @@ footer .bt-2 {
         box-sizing: border-box;
     }
     .menu-trigger {
-        /* position: fixed;
-        right: 20px; bottom: 20px; */
+
         z-index: 2;
         width: 50px;
         height: 44px;
@@ -881,7 +805,6 @@ footer .bt-2 {
         top: 0;
     }
     .menu-trigger span:nth-of-type(2) {
-        /* top: 20px; */
         top: 50%;
         transform: translate(0, -50%);
         
