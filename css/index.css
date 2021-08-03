@@ -923,6 +923,9 @@
         opacity: 1;
         animation: ease;
     }
+    .main2 .con-3 p{
+        text-align: center;
+    }
     .main2 .con-3 a {
         animation: ease;
         opacity: 1;
