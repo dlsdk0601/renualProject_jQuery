@@ -694,7 +694,11 @@
         transform: rotate(45deg);
     }
     /*사이드 창 ------------------------------------------------------*/
+    .container .side{
+        display: none;
+    }
     .container .side.active {
+        display: block;
         width: 80%;
         height: 68vh;
         margin: 0 auto;
