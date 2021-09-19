@@ -224,7 +224,7 @@ const callback = (data)  => {
     $(".more").on("click", function(e){
         e.preventDefault();
         $(".itemlist .mainlist ul li").show();
-        $(this).remove();
+        // $(this).remove();
     })
     
     
