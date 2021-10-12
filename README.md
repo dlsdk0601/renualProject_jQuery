@@ -17,6 +17,7 @@
     HTML, CSS, jQuery
 
 > 화면 구성
+
 * Main Page
 * List Page
 * Detail Page
